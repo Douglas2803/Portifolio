@@ -1,4 +1,6 @@
 import React from "react";
+import Title from "./Title";
+import Rectangle from "./Rectangle/intedx";
 import { MdArrowOutward } from "react-icons/md";
 
 import "./style.scss";
@@ -9,10 +11,8 @@ const Main = () => {
         Contato
         <MdArrowOutward className="arrow" />
       </h2>
-      <h1 className="title">
-        <span className="name">Douglas Giacomelli</span>
-        <span className="role">Desenvolvedor Frontend</span>
-      </h1>
+      <Title />
+      <Rectangle/>
     </main>
   );
 };

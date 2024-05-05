@@ -3,7 +3,7 @@
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 15vh 23vh;
+  grid-template-rows: 15vh 23vh 40vh;
   grid-column-gap: 2vw;
   width: 100%;
   height: auto;
@@ -24,25 +24,5 @@ main {
       top: 1vh;
     }
   }
-  .title {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
-    text-align: center;
-    color: variables.$primary-color;
-    grid-column: 1/5;
-    grid-row: 2/3;
-    background-color: variables.$background-secondary-color;
-    .name {
-      font-family: "Lato", sans-serif;
-      font-weight: 400;
-      padding-bottom: 0.5vh;
-    }
-    .role {
-      font-family: "Notable", sans-serif;
-      font-weight: 400;
-      font-size: 8vw;
-    }
-  }
+  
 }
