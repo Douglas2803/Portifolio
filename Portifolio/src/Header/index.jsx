@@ -1,5 +1,3 @@
-// Header.js
-
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Button from "../Button";

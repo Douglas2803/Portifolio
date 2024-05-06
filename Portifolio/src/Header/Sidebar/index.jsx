@@ -1,5 +1,5 @@
 import React from "react";
-import List from "../List/index";
+import Nav from "../Nav";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import "./style.scss";
 
@@ -13,7 +13,7 @@ const Sidebar = (props) => {
       <button>
         <IoMdCloseCircleOutline onClick={closeSidebar} className="close" />
       </button>
-      <List />
+      <Nav />
     </aside>
   );
 };
