@@ -3,26 +3,20 @@
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 15vh 23vh 44vh 3vh 65vh ;
+  grid-template-rows: 15vh 23vh 44vh 3vh 65vh 65vh;
   grid-column-gap: 2vw;
   width: 100%;
   height: auto;
   align-items: center;
   padding: 0 6vw;
-  .subtitle {
-    width: 41vw;
-    color: variables.$primary-color;
-    grid-column: 2/4;
-    grid-row: 1/2;
-    text-align: left;
-    font-size: 5vh;
-    border-bottom: 3px solid variables.$secondary-color;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    .arrow {
-      position: relative;
-      top: 1vh;
-    }
+
+  .arrow {
+    position: relative;
+    top: 1vh;
   }
-  
+
+  .accordion {
+    grid-row: 2/3;
+    grid-column: 1/5;
+  }
 }

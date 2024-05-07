@@ -6,7 +6,7 @@ import Content from "../../Content";
 
 import "./style.scss";
 
-const Section = () => {
+const Profile = () => {
   return (
     <section className="section-perfil">
       <div className="rectangle-avatar">
@@ -39,4 +39,4 @@ const Section = () => {
   );
 };
 
-export default Section;
+export default Profile;

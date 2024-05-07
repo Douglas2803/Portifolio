@@ -10,7 +10,7 @@ const Sidebar = (props) => {
 
   return (
     <aside className={props.active ? "sidebar" : "sidebar-close"}>
-      <button>
+      <button className="button-close">
         <IoMdCloseCircleOutline onClick={closeSidebar} className="close" />
       </button>
       <Nav />

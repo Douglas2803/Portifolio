@@ -1,20 +1,20 @@
-import React from "react";
+  import React from 'react'
 
-import "./style.scss";
+  import './style.scss'
 
-interface ListProps {
-  items: string[];
-  className?: string;
-}
+  interface ListProps {
+    items: string[];
+    className?: string;
+  }
 
-const List: React.FC<ListProps> = ({ items, className }) => {
-  return (
-    <ul className={className}>
-      {items.map((item, index) => (
-        <li key={index}>{item}</li>
-      ))}
-    </ul>
-  );
-};
+  const List: React.FC<ListProps> = ({ items, className }) => {
+    return (
+      <ul className={className}>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    );
+  };
 
-export default List;
+  export default List

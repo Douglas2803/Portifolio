@@ -5,7 +5,7 @@
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: 13% 30% 1fr;
   grid-column-gap: 2vw;
-  grid-row: 5/7;
+  grid-row: 5/6;
   grid-column: 1/5;
   height: 100%;
   background-color: variables.$background-secondary-color;
@@ -33,6 +33,9 @@
   }
 
   .article-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     grid-column: 1/5;
     grid-row: 3/4;
     font-size: 3vh;

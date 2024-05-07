@@ -8,6 +8,7 @@
   height: 55vh;
   width: 60vw;
   background-color: variables.$background-secondary-color;
+  z-index: 999;
   -webkit-animation: scale-in-hor-right 0.2s
   cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-hor-right 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -56,12 +57,18 @@
       opacity: 1;
     }
   }
-
-  .close {
-    color: variables.$primary-color;
-    width: 10vw;
-    height: 10vh;
+  .button-close{
     position: absolute;
+    width: 15vw;
+    height: 10vh;
+    background: none;
+    border: none;
+    .close {
+      color: variables.$primary-color;
+      width: 10vw;
+      height: 10vh;
+    
+    }
   }
 }
 
