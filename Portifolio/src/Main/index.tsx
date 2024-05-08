@@ -110,6 +110,7 @@ const Main = () => {
         </article>
         <Form />
       </Section>
+
     </main>
   );
 };

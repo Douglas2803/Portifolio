@@ -1,0 +1,14 @@
+@use '../variables/variables.scss';
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    margin-top: 3vh;
+    text-align: center;
+    padding: 4vw;
+    color:variables.$secondary-color;
+    border-top: 1px solid variables.$secondary-color;
+    font-size: 4vw;
+}

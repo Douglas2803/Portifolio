@@ -4,8 +4,8 @@ import "./style.scss";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <p>Douglas Giacomelli</p>
+    <footer>
+      <p>&copy; Douglas Giacomelli Soluções em Tecnologia LTDA - 2023</p>
     </footer>
   );
 };
