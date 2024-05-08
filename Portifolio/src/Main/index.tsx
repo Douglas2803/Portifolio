@@ -81,7 +81,12 @@ const Main = () => {
           subtitle="Portifólio"
           className="subtitle-skills-portifolio"
         />
-        <HBox title="teste" />
+        <aside className="box-items">
+          <HBox title="Em breve" />
+          <HBox title="Em breve" />
+          <HBox title="Em breve" />
+          <HBox title="Em breve" />
+        </aside>
       </Section>
     </main>
   );

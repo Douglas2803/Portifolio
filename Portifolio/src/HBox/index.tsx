@@ -7,7 +7,7 @@ interface IpropsHBox {
 }
 
 const HBox: React.FC<IpropsHBox> = ({ title }) => {
-  return <aside className="box"><h3 className="title-box">{title}</h3></aside>;
+  return <div className="box"><h3 className="title-box">{title}</h3></div>;
 };
 
 export default HBox;
