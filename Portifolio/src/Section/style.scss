@@ -23,3 +23,12 @@
     grid-column: 1/5;
   }
 }
+
+.section-contatc{
+  display: grid;
+  grid-row: 8/9;
+  grid-column: 1/5;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 2vw;
+}

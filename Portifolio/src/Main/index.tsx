@@ -6,6 +6,8 @@ import DropdownSection from "../Acordion";
 import Rectangle from "./Rectangle/intedx";
 import Subtitle from "./Subtitle";
 import Acordion from "../Acordion";
+import List from "../List";
+import Form from "../Form";
 import { Accordion } from "@chakra-ui/accordion";
 import { MdArrowOutward } from "react-icons/md";
 import HBox from "../HBox";
@@ -87,6 +89,26 @@ const Main = () => {
           <HBox title="Em breve" />
           <HBox title="Em breve" />
         </aside>
+      </Section>
+      <Section className="section-contatc">
+        <Subtitle subtitle="Contato" className="subtitle-skills-portifolio" />
+        <article className="contatct">
+          <List
+            items={["WhatsApp: ", "GitHub: ", "Linkedin: "]}
+            link={[
+              "https://wa.me/5554981229448",
+              "https://github.com/Douglas2803",
+              "https://www.linkedin.com/in/douglasgiacomelli/",
+            ]}
+            textLink={[
+              "(54)981229448",
+              "https://github.com/Douglas2803",
+              "https://www.linkedin.com/in/douglasgiacomelli/",
+            ]}
+            className="items-contact"
+          />
+        </article>
+        <Form />
       </Section>
     </main>
   );

@@ -22,3 +22,24 @@
         padding: 0.4vh 0;
     }
 }
+
+.items-contact{
+    height: 100%;
+    width: 100;
+    color:variables.$primary-color;
+    background-color: variables.$background-secondary-color;
+    list-style: none;
+    font-family: "Lato", sans-serif;
+    font-size: 4vw;
+    padding: 3vh;
+    li{
+        margin-bottom: 2vh;
+        .name-item{
+        color:variables.$secondary-color;
+        }
+        a{
+            text-decoration: none;
+            color: variables.$primary-color;
+        }
+    }
+}
