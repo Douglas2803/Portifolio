@@ -3,7 +3,7 @@
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 15vh 23vh 44vh 3vh 65vh 65vh;
+  grid-template-rows: 15vh 23vh 44vh 3vh 65vh auto auto;
   grid-column-gap: 2vw;
   width: 100%;
   height: auto;

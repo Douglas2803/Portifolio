@@ -1,6 +1,6 @@
 @use "../variables/variables.scss";
 .accordion-item{
-  
+  // height: auto;
   .button-accordion {
     background-color: variables.$background-secondary-color;
     color: variables.$primary-color;

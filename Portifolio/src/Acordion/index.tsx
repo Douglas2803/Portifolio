@@ -35,7 +35,9 @@ const Acordion: React.FC<IPropsAcordion> = ({
         <h3>{title}</h3>
       </AccordionButton>
       <AccordionPanel className="text">
-        <Content text={paragraph} className="content-skills" />
+        <article>
+          <Content text={paragraph} className="content-skills" />
+        </article>
       </AccordionPanel>
     </AccordionItem>
   );

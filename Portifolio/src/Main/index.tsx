@@ -8,10 +8,11 @@ import Subtitle from "./Subtitle";
 import Acordion from "../Acordion";
 import { Accordion } from "@chakra-ui/accordion";
 import { MdArrowOutward } from "react-icons/md";
+import HBox from "../HBox";
 import html from "../assets/icon/html-icon.png";
 import css from "../assets/icon/css-icon.png";
-import sass from '../assets/icon/sass-icon.png'
-import js from "../assets/icon/js-icon.png"
+import sass from "../assets/icon/sass-icon.png";
+import js from "../assets/icon/js-icon.png";
 import ts from "../assets/icon/tp-icon.png";
 import react from "../assets/icon/React.png";
 import bootstrap from "../assets/icon/bootstrap.png";
@@ -28,7 +29,10 @@ const Main = () => {
       <Rectangle />
       <Profile />
       <Section className="section-acordion">
-        <Subtitle subtitle="Habilidades" className="subtitle-skills" />
+        <Subtitle
+          subtitle="Habilidades"
+          className="subtitle-skills-portifolio"
+        />
         <Accordion allowToggle className="accordion">
           <Acordion
             title="HTML"
@@ -71,6 +75,13 @@ const Main = () => {
             alt="icone do figma"
           />
         </Accordion>
+      </Section>
+      <Section className="section-portifolio">
+        <Subtitle
+          subtitle="Portifólio"
+          className="subtitle-skills-portifolio"
+        />
+        <HBox title="teste" />
       </Section>
     </main>
   );
