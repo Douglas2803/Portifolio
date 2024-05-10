@@ -7,11 +7,14 @@
 }
 
 .subtitle-contact {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   grid-column: 2/4;
   grid-row: 1/2;
-  width: 41vw;
+  width: 100%;
   text-align: left;
-  font-size: 5vh;
+  font-size: 9vw;
   border-bottom: 3px solid variables.$secondary-color;
 }
 

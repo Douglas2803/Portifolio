@@ -8,6 +8,7 @@
     text-align: center;
     justify-content: space-evenly;
     list-style: none;
+    font-size: 4vh;
   }
 
 .items-content{
@@ -32,6 +33,7 @@
     font-family: "Lato", sans-serif;
     font-size: 4vw;
     padding: 3vh;
+    word-wrap: break-word;
     li{
         margin-bottom: 2vh;
         .name-item{
