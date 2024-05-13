@@ -1,25 +1,49 @@
-@use '../../variables/variables.scss';
+@use "../../variables/variables.scss";
+@use "../../scss/media-query" as *;
 
 .title {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
-    text-align: center;
-    color: variables.$primary-color;
-    grid-column: 1/5;
-    grid-row: 2/3;
-    background-color: variables.$background-secondary-color;
-    .name {
-      font-family: "Lato", sans-serif;
-      font-weight: 400;
-      font-size: 10vw;
-      margin-bottom: 0.6vh;
-    }
-    .role {
-      font-family: "Notable", sans-serif;
-      font-weight: 400;
-      font-size: 8vw;
-      margin-bottom: 0.9vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  text-align: center;
+  color: variables.$primary-color;
+  grid-column: 1/5;
+  grid-row: 2/3;
+  background-color: variables.$background-secondary-color;
+  .name {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 10vw;
+    margin-bottom: 0.6vh;
+
+    @include md {
+      display: none;
     }
   }
+  .role {
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-size: 8vw;
+    margin-bottom: 0.9vh;
+
+    .subtitle-contact-desktop {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+
+      @include md {
+        position: relative;
+        top: 2.1em;
+        left: -4.8em;
+        font-size: 6vw;
+        text-decoration: underline variables.$secondary-color;
+      }
+    }
+
+    @include md {
+      display: flex;
+      text-align: left;
+    }
+  }
+}

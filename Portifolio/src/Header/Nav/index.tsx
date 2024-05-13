@@ -6,13 +6,15 @@ interface IPropsNav {
   className?: string;
 }
 
-const Nav: React.FC<IPropsNav> = ({className}) => {
+const Nav: React.FC<IPropsNav> = ({ className }) => {
   return (
     <nav className={`navigation ${className}`}>
-      <List
-        items={["Sobre", "Habilidades", "Portifólio", "Contato"]}
-        className="items-nav"
-      />
+      <ul>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Habilidades</a></li>
+        <li><a href="#">Portifólio</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
     </nav>
   );
 };

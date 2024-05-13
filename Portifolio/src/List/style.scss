@@ -10,17 +10,6 @@
   justify-content: space-evenly;
   list-style: none;
   font-size: 4vh;
-
-  @include md{
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 3vw;
-  }
-
-  @include lg{
-    font-size: 5vh;
-  }
 }
 
 .items-content {

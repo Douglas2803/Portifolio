@@ -1,4 +1,5 @@
 @use "../../variables/variables.scss";
+@use "../../scss/media-query" as *;
 
 .subtitle {
   color: variables.$primary-color;
@@ -16,6 +17,14 @@
   text-align: left;
   font-size: 9vw;
   border-bottom: 3px solid variables.$secondary-color;
+
+  @include md {
+    display: none;
+  }
+}
+
+.subtitle-contact-desktop{
+  display: flex;
 }
 
 .subtitle-skills-portifolio {
@@ -26,6 +35,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3vh 0 ;
+  padding: 3vh 0;
 }
-

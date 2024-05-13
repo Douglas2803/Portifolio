@@ -4,7 +4,7 @@ import "./style.scss";
 interface IPropsSubtitle {
   subtitle: string;
   className?: string;
-  children?: ReactNode; // Adicionando a prop children
+  children?: ReactNode;
 }
 
 const Subtitle: React.FC<IPropsSubtitle> = ({ subtitle, className, children }) => {

@@ -8,10 +8,12 @@ const Title = () => {
     <>
       <h1 className="title">
         <span className="name">Douglas Giacomelli</span>
-        <span className="role">Desenvolvedor Frontend</span>
-        <Subtitle subtitle="Contato" className="subtitle-contact">
-          <MdArrowOutward className="arrow" />
-        </Subtitle>
+        <span className="role">
+          Desenvolvedor Frontend
+          <Subtitle subtitle="Contato" className="subtitle-contact-desktop">
+            <MdArrowOutward className="arrow" />
+          </Subtitle>
+        </span>
       </h1>
     </>
   );
