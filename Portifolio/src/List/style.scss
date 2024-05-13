@@ -1,47 +1,59 @@
-@use '../variables/variables.scss';
+@use "../variables/variables.scss";
+@use "../scss/media-query" as *;
 
 .items-nav {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-evenly;
-    list-style: none;
-    font-size: 4vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 4vh;
+
+  @include md{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 3vw;
   }
 
-.items-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    color:variables.$primary-color;
-    list-style: none;
-    font-size: 3.3vw;
-    height: 100%;
-    li{
-        padding: 0.4vh 0;
-    }
+  @include lg{
+    font-size: 5vh;
+  }
 }
 
-.items-contact{
-    height: 100%;
-    width: 100;
-    color:variables.$primary-color;
-    background-color: variables.$background-secondary-color;
-    list-style: none;
-    font-family: "Lato", sans-serif;
-    font-size: 4vw;
-    padding: 3vh;
-    word-wrap: break-word;
-    li{
-        margin-bottom: 2vh;
-        .name-item{
-        color:variables.$secondary-color;
-        }
-        a{
-            text-decoration: none;
-            color: variables.$primary-color;
-        }
+.items-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: variables.$primary-color;
+  list-style: none;
+  font-size: 3.3vw;
+  height: 100%;
+  li {
+    padding: 0.4vh 0;
+  }
+}
+
+.items-contact {
+  height: 100%;
+  width: 100;
+  color: variables.$primary-color;
+  background-color: variables.$background-secondary-color;
+  list-style: none;
+  font-family: "Lato", sans-serif;
+  font-size: 4vw;
+  padding: 3vh;
+  word-wrap: break-word;
+  li {
+    margin-bottom: 2vh;
+    .name-item {
+      color: variables.$secondary-color;
     }
+    a {
+      text-decoration: none;
+      color: variables.$primary-color;
+    }
+  }
 }

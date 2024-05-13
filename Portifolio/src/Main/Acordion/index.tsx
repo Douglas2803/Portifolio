@@ -6,7 +6,7 @@ import {
   AccordionPanel,
 } from "@chakra-ui/accordion";
 import { IoIosArrowDropdown } from "react-icons/io";
-import Content from "../Content";
+import Content from "../../Content";
 
 import "./style.scss";
 

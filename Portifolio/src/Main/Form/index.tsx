@@ -11,6 +11,7 @@ const Form = () => {
         name="nome"
         id="nome"
         className="form-items"
+        required
       />
       <input
         type="email"
@@ -18,14 +19,15 @@ const Form = () => {
         placeholder="Seu e-mail"
         id="email"
         className="form-items"
+        required
       />
-      <textarea placeholder="Assunto">teste</textarea>
-      <input
-        type=""
-        name="content"
-        placeholder="Assunto"
+      <textarea
+        placeholder="Seu assunto aqui"
+        name="assunto"
+        id="assunto"
         className="form-items"
-      />
+      >
+      </textarea>
       <input type="submit" className="form-items" />
     </form>
   );

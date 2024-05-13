@@ -1,0 +1,45 @@
+@use "../../variables/variables.scss";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  grid-row: 3/4;
+  grid-column: 1/5;
+  background-color: variables.$background-secondary-color;
+  font-family: "Lato", sans-serif;
+
+  input[type="text"],
+  input[type="email"] {
+    padding: 3vw;
+  }
+
+  textarea {
+    padding: 3vw;
+  }
+
+  textarea::placeholder{
+    text-align: center;
+    padding: 20% 0;
+  }
+
+  .form-items {
+    color: variables.$secondary-color;
+    background-color: transparent;
+    margin-bottom: 2vh;
+    border: 2px solid variables.$secondary-color;
+    border-radius: 3vw;
+    height: 8vh;
+    width: 90%;
+
+    &::placeholder {
+      color: variables.$secondary-color;
+    }
+
+    &:nth-child(3) {
+      height: 25vh;
+    }
+  }
+}

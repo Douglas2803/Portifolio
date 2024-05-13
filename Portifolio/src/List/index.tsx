@@ -2,14 +2,14 @@ import React from "react";
 
 import "./style.scss";
 
-interface ListProps {
+interface IListProps {
   items: string[];
   className?: string;
   link?: string[];
   textLink?: string[];
 }
 
-const List: React.FC<ListProps> = ({ items, className, link, textLink }) => {
+const List: React.FC<IListProps> = ({ items, className, link, textLink }) => {
   return (
     <ul className={className}>
       {items.map((item, index) => (

@@ -1,30 +1,39 @@
-@use '../variables/variables.scss';
+@use "../variables/variables.scss";
+@use "../scss/media-query" as *;
 
 header {
+  display: grid;
+  width: 100%;
+  height: 100px;
+  border-bottom: 3px variables.$primary-color solid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100%;
+  grid-column-gap: 2vw;
+  align-items: center;
+  padding: 0 6vw;
+
+  .button-hamburguer {
     display: grid;
-    width: 100%;
-    height: 100px;
-    border-bottom: 3px variables.$primary-color solid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 100%;
-    grid-column-gap: 2vw;
-    align-items: center;
-    padding: 0 6vw;
-
-    .button-hamburguer{
-        display: grid;
-        grid-column: 4/5;
-        background: none;
-        border: none;
-        height: 9vh;
-        .icon-menu{
-            width: 100%;
-            height: 100%;
-            color: variables.$primary-color;
-        }
-
-        .icon-menu:active{
-             color: variables.$secondary-color;
-         }
+    grid-column: 4/5;
+    background: none;
+    border: none;
+    height: 9vh;
+    .icon-menu {
+      width: 100%;
+      height: 100%;
+      color: variables.$primary-color;
     }
+
+    .icon-menu:active {
+      color: variables.$secondary-color;
+    }
+
+    @include md {
+      display: none;
+    }
+  }
+  @include md {
+    grid-template-columns: repeat(12, 1fr);
+    height: 14vh;
+  }
 }
