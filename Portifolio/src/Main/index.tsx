@@ -23,6 +23,7 @@ import "./style.scss";
 const Main = () => {
   return (
     <main>
+      <h2 className="subtittle-main"><span className="subtittle-main-G">Olá,</span>me chamo <span className="subtittle-main-G">Douglas </span>seu</h2>
       <Subtitle subtitle="Contato" className="subtitle-contact">
         <MdArrowOutward className="arrow" />
       </Subtitle>

@@ -34,9 +34,9 @@
 
       @include md {
         position: relative;
-        top: 2.1em;
-        left: -4.8em;
-        font-size: 6vw;
+        top: 1.9em;
+        left: -4.4em;
+        font-size: 4vw;
         text-decoration: underline variables.$secondary-color;
       }
     }
@@ -44,6 +44,8 @@
     @include md {
       display: flex;
       text-align: left;
+      font-size: 5vw;
+      padding-left: 4vw;
     }
   }
 }
