@@ -36,6 +36,7 @@ const Main = () => {
       <Title />
       <img src={Avatar1} alt="Elipse vermelha" className="elipse-vermelha"/>
       <img src={Avatar2} alt="Elipse laranja" className="elipse-laranja"/>
+      <p className="sub-text">Desenvolvimento de sites criativos e eficientes<br/> para seu negócio</p>
       <Rectangle />
       <Profile />
       <Section className="section-acordion">

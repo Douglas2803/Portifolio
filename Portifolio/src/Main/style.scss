@@ -28,12 +28,12 @@ main {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 3vw;
-    padding-top:3vh;
-    @media screen and (max-width:767px){
+    padding-top: 3vh;
+    @media screen and (max-width: 767px) {
       display: none;
     }
 
-    .subtittle-main-G{
+    .subtittle-main-G {
       font-weight: 400;
       font-size: 5vw;
     }
@@ -41,21 +41,44 @@ main {
 
   @include md {
     padding: 0 19vw;
+    grid-template-rows: 15vh auto 54vh 3vh 65vh auto auto auto auto;
+
   }
 
-  .elipse-vermelha{
+  .elipse-vermelha {
     position: absolute;
     top: 60vh;
     left: 27vw;
     width: 45vw;
     z-index: 998;
+    @include md {
+      top: 65vh;
+      left: 27vw;
+      width: 17vw;
+    }
   }
 
-  .elipse-laranja{
+  .elipse-laranja {
     position: absolute;
     top: 55vh;
     left: 27vw;
     width: 20vw;
     z-index: 997;
+
+    @include md {
+      top: 61vh;
+      left: 25vw;
+      width: 8vw;
+    }
+  }
+
+  .sub-text{
+    color: variables.$primary-color;
+    position: absolute;
+    top: 70vh;
+    left: 61vw;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.3vw;
   }
 }
