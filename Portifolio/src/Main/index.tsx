@@ -18,16 +18,24 @@ import ts from "../assets/icon/tp-icon.png";
 import react from "../assets/icon/React.png";
 import bootstrap from "../assets/icon/bootstrap.png";
 import figma from "../assets/icon/figma-icon.png";
+import Avatar1 from "../assets/img/Ellipse vermelha grande.png";
+import Avatar2 from "../assets/img/Ellipse laranja pequena.png";
 
 import "./style.scss";
+
 const Main = () => {
   return (
     <main>
-      <h2 className="subtittle-main"><span className="subtittle-main-G">Olá,</span>me chamo <span className="subtittle-main-G">Douglas </span>seu</h2>
+      <h2 className="subtittle-main">
+        <span className="subtittle-main-G">Olá,</span>me chamo{" "}
+        <span className="subtittle-main-G">Douglas </span>seu
+      </h2>
       <Subtitle subtitle="Contato" className="subtitle-contact">
         <MdArrowOutward className="arrow" />
       </Subtitle>
       <Title />
+      <img src={Avatar1} alt="Elipse vermelha" className="elipse-vermelha"/>
+      <img src={Avatar2} alt="Elipse laranja" className="elipse-laranja"/>
       <Rectangle />
       <Profile />
       <Section className="section-acordion">
@@ -110,7 +118,6 @@ const Main = () => {
         </article>
         <Form />
       </Section>
-
     </main>
   );
 };

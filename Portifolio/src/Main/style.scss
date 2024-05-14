@@ -42,4 +42,20 @@ main {
   @include md {
     padding: 0 19vw;
   }
+
+  .elipse-vermelha{
+    position: absolute;
+    top: 60vh;
+    left: 27vw;
+    width: 45vw;
+    z-index: 998;
+  }
+
+  .elipse-laranja{
+    position: absolute;
+    top: 55vh;
+    left: 27vw;
+    width: 20vw;
+    z-index: 997;
+  }
 }

@@ -1,9 +1,20 @@
-.rectangle{
-    grid-row: 3/4;
-    grid-column: 1/5;
-    height: 15vh;
-    width: 100%;
+@use "../../scss/media-query" as *;
+
+.rectangle {
+  grid-row: 3/4;
+  grid-column: 1/5;
+  height: 15vh;
+  width: 100%;
+  left: 0;
+  top: 82vh;
+  align-self: end;
+  z-index: 999;
+
+  @include md{
+    position: absolute;
     left: 0;
-    top:82vh;
-    align-self: end;
+    top: 84vh;
+    width: 55%;
+    border-radius: 0 100px 100px 0;
+  }
 }
