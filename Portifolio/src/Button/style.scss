@@ -28,6 +28,12 @@
   ul {
     display: flex;
   }
+  @include md {
+    grid-column: 6/9;
+    grid-row: 3/5;
+    align-self: start;
+    margin-top: 2vh;
+  }
 }
 
 .button-profile li {

@@ -34,9 +34,9 @@
 
       @include md {
         position: relative;
-        top: 1.9em;
+        top: 2.4em;
         left: -4.4em;
-        font-size: 4vw;
+        font-size: 4.4vw;
         text-decoration: underline variables.$secondary-color;
       }
     }
@@ -44,8 +44,12 @@
     @include md {
       display: flex;
       text-align: left;
-      font-size: 5vw;
+      font-size: 6.4vw;
       padding-left: 4vw;
     }
+  }
+
+  @include md{
+    grid-column: 1/13;
   }
 }

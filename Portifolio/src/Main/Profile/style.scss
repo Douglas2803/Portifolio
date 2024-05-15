@@ -1,8 +1,9 @@
 @use "../../variables/variables.scss";
+@use "../../scss/media-query" as *;
 
 .section-perfil {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 13% 30% 1fr;
   grid-column-gap: 2vw;
   grid-row: 5/6;
@@ -19,25 +20,76 @@
     grid-row: 1/3;
     height: 50%;
     align-self: end;
-    .douglas-avatar{
+    .douglas-avatar {
       width: 45vw;
       height: 25vh;
+      @include md {
+        height: 40vh;
+      }
+    }
+    @include md {
+      grid-row: 3/4;
+      grid-column: 1/6;
     }
   }
 
-  .article-perfil{
+  .article-perfil {
     width: 100%;
     height: 100%;
     grid-column: 3/5;
-    grid-row:2/3;
+    grid-row: 2/3;
+
+    @include md {
+      grid-row: 3/5;
+      grid-column: 6/13;
+    }
   }
 
-  .article-content{
-    display:flex;
+  .article-content {
+    display: flex;
     align-items: center;
     justify-content: center;
     grid-column: 1/5;
     grid-row: 3/4;
     font-size: 3vh;
+
+    @include sm {
+      font-size: 1em;
+    }
+
+    @include md {
+      grid-column: 5/13;
+      grid-row: 1/2;
+      background-color: variables.$background-secondary-color;
+      border-radius: 7vh;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 2vw;
+        height: 3.2vh;
+        border-left: 11vw solid transparent;
+        border-bottom: 10vh solid variables.$primary-color;
+        top: 99vh;
+        left: 46vw;
+        transform: translate(-100%, 100%);
+        overflow: visible;
+        z-index: -1;
+      }
+      @include lg {
+        &::before{
+          top: 110vh;
+        }
+        }
+    }
+  }
+
+  @include md {
+    grid-column: 1/13;
+    grid-row: 5/6;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 2vw;
+    grid-template-rows: 45% 10% 45%;
+    background: none;
   }
 }
