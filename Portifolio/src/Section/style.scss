@@ -67,4 +67,8 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto auto;
   grid-column-gap: 2vw;
+
+  @include sm{
+    grid-column: 1/13;
+  }
 }

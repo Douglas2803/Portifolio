@@ -1,4 +1,5 @@
 @use "../../variables/variables.scss";
+@use "../../scss/media-query" as *;
 
 .form {
   display: flex;
@@ -41,5 +42,9 @@
     &:nth-child(3) {
       height: 25vh;
     }
+  }
+
+  @include sm{
+    grid-column: 1/13;
   }
 }

@@ -19,6 +19,9 @@ main {
   .contatct {
     grid-column: 1/5;
     grid-row: 2/3;
+    @include sm{
+      grid-column: 1/13;
+    }
   }
 
   .subtittle-main {
