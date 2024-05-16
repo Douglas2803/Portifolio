@@ -34,9 +34,12 @@ const Main = () => {
         <MdArrowOutward className="arrow" />
       </Subtitle>
       <Title />
-      <img src={Avatar1} alt="Elipse vermelha" className="elipse-vermelha"/>
-      <img src={Avatar2} alt="Elipse laranja" className="elipse-laranja"/>
-      <p className="sub-text">Desenvolvimento de sites criativos e eficientes<br/> para seu negócio</p>
+      <img src={Avatar1} alt="Elipse vermelha" className="elipse-vermelha" />
+      <img src={Avatar2} alt="Elipse laranja" className="elipse-laranja" />
+      <p className="sub-text">
+        Desenvolvimento de sites criativos e eficientes
+        <br /> para seu negócio
+      </p>
       <Rectangle />
       <Profile />
       <Section className="section-acordion">
@@ -86,6 +89,14 @@ const Main = () => {
             alt="icone do figma"
           />
         </Accordion>
+        <article className="h-box">
+          <HBox title="html" />
+          <HBox title="html" />
+          <HBox title="html" />
+          <HBox title="html" />
+          <HBox title="html" />
+          <HBox title="html" />
+        </article>
       </Section>
       <Section className="section-portifolio">
         <Subtitle

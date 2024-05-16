@@ -49,7 +49,7 @@
     }
   }
 
-  @include md{
-    grid-column: 1/13;
+  @include sm{
+    grid-column: 1/12;
   }
 }

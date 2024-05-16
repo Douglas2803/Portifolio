@@ -75,19 +75,21 @@
         transform: translate(-100%, 100%);
         overflow: visible;
         z-index: -1;
-        
       }
       @include lg {
-        &::before{
+        &::before {
           top: 99.4vh;
         }
       }
-      @include xl{ 
-        &::before{
+      @include xl {
+        &::before {
           top: 110vh;
         }
       }
     }
+  }
+  @include sm{
+    grid-column: 1/5;
   }
 
   @include md {
@@ -95,19 +97,39 @@
     grid-row: 5/6;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 2vw;
-    grid-template-rows: 45% 10% 45%;
+    grid-template-rows: 45% 13% 45%;
     background: none;
   }
 
-  .background-profile{
-    @media screen and (max-width:768px){
+  .background-profile {
+    @media screen and (max-width: 768px) {
       display: none;
     }
-    @include md{
+    @include md {
       grid-column: 1/13;
       grid-row: 3/4;
       background-color: variables.$background-secondary-color;
       z-index: -1;
+    }
+  }
+
+  .icons-items {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    @include md {
+      grid-column: 5/13;
+      grid-row: 2/3;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: variables.$background-secondary-color;
+      margin: 1vh 0;
+      z-index: -1;
+    }
+    .icon-item {
+      height: 5vh;
+      width: 5vw;
     }
   }
 }

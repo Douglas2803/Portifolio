@@ -1,4 +1,5 @@
 @use '../../variables/variables.scss';
+@use "../../scss/media-query" as *;
 
 .box{
     display: flex;
@@ -11,5 +12,9 @@
         background-color: variables.$secondary-color;
         width: 100%;
         text-align: center;
+    }
+    @include md{
+        width: 30%;
+        margin: 1vh 1vw;
     }
 }

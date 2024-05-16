@@ -22,7 +22,7 @@ main {
   }
 
   .subtittle-main {
-    grid-column: 1/13;
+    grid-column: 1/5;
     grid-row: 1/2;
     color: variables.$primary-color;
     font-family: "Lato", sans-serif;
@@ -37,12 +37,9 @@ main {
       font-weight: 400;
       font-size: 5vw;
     }
-  }
-
-  @include md {
-    padding: 0 12vw;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 15vh auto 50vh 4vh 65vh auto auto auto auto;
+    @include sm{
+      grid-column: 1/13;
+    }
   }
 
   .elipse-vermelha {
@@ -79,9 +76,16 @@ main {
     left: 60vw;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 1.3vw;
+    font-size: 1.2em;
     @media screen and (max-width: 768px) {
       display: none;
     }
   }
+
+    @include md {
+    padding: 0 12vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15vh auto 50vh 4vh 65vh auto auto auto auto;
+  }
+
 }

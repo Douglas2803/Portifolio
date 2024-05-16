@@ -1,16 +1,20 @@
 @use "../../variables/variables.scss";
-.accordion-item{
-  
+@use "../../scss/media-query" as *;
+
+.accordion-item {
+  @include sm{
+    display: none;
+  }
   .button-accordion {
     background-color: variables.$background-secondary-color;
     color: variables.$primary-color;
     height: 10vh;
     border: none;
-    .down-arrow{
+    .down-arrow {
       width: 15vw;
       height: 70%;
     }
-    .img-icons{
+    .img-icons {
       height: 8vh;
       width: 12vw;
     }
@@ -24,6 +28,6 @@
   }
 }
 
-.accordion-item:nth-child(n + 2){
+.accordion-item:nth-child(n + 2) {
   margin-top: 2vh;
 }
