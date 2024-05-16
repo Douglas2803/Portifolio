@@ -18,6 +18,7 @@
   font-size: 9vw;
   border-bottom: 3px solid variables.$secondary-color;
 
+  
   @include md {
     display: none;
   }
