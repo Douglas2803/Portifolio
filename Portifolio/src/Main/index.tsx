@@ -90,12 +90,11 @@ const Main = () => {
           />
         </Accordion>
         <article className="h-box">
-          <HBox title="html" />
-          <HBox title="html" />
-          <HBox title="html" />
-          <HBox title="html" />
-          <HBox title="html" />
-          <HBox title="html" />
+          <HBox title="html" className="title-box-h"/>
+          <HBox title="html" className="title-box-h"/>
+          <HBox title="html" className="title-box-h"/>
+          <HBox title="html" className="title-box-h"/>
+          <HBox title="html" className="title-box-h"/>
         </article>
       </Section>
       <Section className="section-portifolio">

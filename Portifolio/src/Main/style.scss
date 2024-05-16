@@ -85,9 +85,9 @@ main {
     }
   }
 
-    @include md {
+    @include sm {
     padding: 0 12vw;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 15vh auto 50vh 4vh 65vh auto auto auto auto;
   }
 

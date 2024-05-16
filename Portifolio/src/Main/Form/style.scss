@@ -21,7 +21,7 @@
     padding: 3vw;
   }
 
-  textarea::placeholder{
+  textarea::placeholder {
     text-align: center;
     padding: 20% 0;
   }
@@ -42,9 +42,18 @@
     &:nth-child(3) {
       height: 25vh;
     }
+
+    @include sm {
+      &:nth-child(3) {
+        height: 30vh;
+        display: flex; // Adiciona flexbox ao terceiro filho
+        align-items: center; // Alinha verticalmente o conteúdo
+        justify-content: center; // Opcional: alinha horizontalmente o conteúdo
+      }
+    }
   }
 
-  @include sm{
+  @include sm {
     grid-column: 1/13;
   }
 }
