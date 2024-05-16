@@ -35,6 +35,9 @@ const Profile = () => {
             uptas qui ullam mollitia."
         />
       </article>
+      <div className="background-profile">
+
+      </div>
     </section>
   );
 };
