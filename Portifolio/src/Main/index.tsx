@@ -90,11 +90,12 @@ const Main = () => {
           />
         </Accordion>
         <article className="h-box">
-          <HBox title="html" className="title-box-h"/>
-          <HBox title="html" className="title-box-h"/>
-          <HBox title="html" className="title-box-h"/>
-          <HBox title="html" className="title-box-h"/>
-          <HBox title="html" className="title-box-h"/>
+          <HBox title="html" className="title-box-h" />
+          <HBox title="CSS/SASS" className="title-box-h" />
+          <HBox title="JS/TS" className="title-box-h" />
+          <HBox title="React" className="title-box-h" />
+          <HBox title="Bootstrap" className="title-box-h" />
+          <HBox title="Figma" className="title-box-h" />
         </article>
       </Section>
       <Section className="section-portifolio">
@@ -103,10 +104,10 @@ const Main = () => {
           className="subtitle-skills-portifolio"
         />
         <aside className="box-items">
-          <HBox title="Em breve" />
-          <HBox title="Em breve" />
-          <HBox title="Em breve" />
-          <HBox title="Em breve" />
+          <HBox title="Em breve" className="title-box-p" />
+          <HBox title="Em breve" className="title-box-p" />
+          <HBox title="Em breve" className="title-box-p" />
+          <HBox title="Em breve" className="title-box-p" />
         </aside>
       </Section>
       <Section className="section-contatc">

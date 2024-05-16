@@ -8,20 +8,33 @@
   height: 25vh;
   margin-bottom: 2vh;
   background-color: variables.$background-secondary-color;
+
   .title-box-h {
     background-color: variables.$secondary-color;
     width: 100%;
     text-align: center;
+    padding: 0 1vw;
+    border-radius: 3vw;
+    border: solid 1px;
     @include sm {
       position: relative;
       bottom: 13vh;
       left: 3vw;
-      width: 30%;
+      width: auto;
+    }
+  }
+  .title-box-p {
+    background-color: variables.$secondary-color;
+    width: 100%;
+    text-align: center;
+
+    @include sm {
+      width: 100%;
     }
   }
   @include md {
     width: 30%;
-    margin: 1vh 1vw;
+    margin: 3vh 1vw;
     border: 1px solid variables.$secondary-color;
     border-radius: 3vw;
   }
