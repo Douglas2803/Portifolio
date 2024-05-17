@@ -32,7 +32,7 @@ const Acordion: React.FC<IPropsAcordion> = ({
         <IoIosArrowDropdown className="down-arrow" />
         <img src={src} alt={alt} className="img-icons" />
         {src2 && <img src={src2} alt={alt2} className="img-icons" />}
-        <h3>{title}</h3>
+        <h3 className="title-icon">{title}</h3>
       </AccordionButton>
       <AccordionPanel className="text">
         <article>

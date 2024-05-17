@@ -24,7 +24,7 @@
     padding: 0.4vh 0;
   }
   @include md {
-    font-size: 1.2em;
+    font-size: 1em;
     padding-bottom: 1vh;
   }
 }
@@ -52,5 +52,16 @@
   @include sm {
     border-radius: 2vw 2vw 0 0 ;
     border-bottom: none;
+     li {
+      font-size: 0.6em;
+    margin-bottom: 2vh;
+    .name-item {
+      color: variables.$secondary-color;
+    }
+    a {
+      text-decoration: none;
+      color: variables.$primary-color;
+    }
+  }
   }
 }

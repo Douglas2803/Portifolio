@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <header>
       <Nav className="navigation-desktop" />
-      <Button text="Download CV" className="button-header" />
+      <Button text="BAIXAR CURRICULO" className="button-header" />
       <button className="button-hamburguer" onClick={toggleSidebar}>
         <GiHamburgerMenu className="icon-menu" />
       </button>

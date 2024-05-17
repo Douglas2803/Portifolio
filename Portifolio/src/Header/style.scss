@@ -4,13 +4,17 @@
 header {
   display: grid;
   width: 100%;
-  height: 100px;
+  height: auto;
   border-bottom: 3px variables.$primary-color solid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100%;
   grid-column-gap: 2vw;
   align-items: center;
   padding: 0 6vw;
+  position: fixed;
+  top: 0;
+  background-color: variables.$background-primary-color;
+  z-index: 999;
 
   .button-hamburguer {
     display: grid;
