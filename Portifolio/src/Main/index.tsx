@@ -50,13 +50,22 @@ const Main = () => {
         <Accordion allowToggle className="accordion">
           <Acordion
             title="HTML"
-            paragraph="skaopskaopskaopskaposaksopak"
+            items={[
+              "Melhor ranqueamento;",
+              "Experiência de usuário (UX);",
+              "Segurança;",
+              "Acessibilidade;",
+            ]}
             src={html}
             alt="icone de html"
           />
           <Acordion
             title="CSS/SASS"
-            paragraph="skaopskaopskaopskaposaksopak"
+            items={[
+              "Experiência de usuário (UX);",
+              "Responsividade;",
+              "Mobile first;",
+            ]}
             src={css}
             src2={sass}
             alt="icone css"
@@ -64,7 +73,13 @@ const Main = () => {
           />
           <Acordion
             title="JS/TS"
-            paragraph="skaopskaopskaopskaposaksopak"
+            items={[
+              "Amplamente utilizado no mercado, com suporte facilitado;",
+              "Interatividade na Web;",
+              "Ecosistema de bibliotecas e frameworks ricos;",
+              "Segurança e robustez (TS);",
+              "Desenvolvimento escalável (TS);",
+            ]}
             src={js}
             src2={ts}
             alt="icone javascript"
@@ -72,19 +87,30 @@ const Main = () => {
           />
           <Acordion
             title="React"
-            paragraph="skaopskaopskaopskaposaksopak"
+            items={[
+              "Biblioteca js/ts mais utilizadas pelo mercado;",
+              "Amplamente conhecido e estabelecido pelas empresas;",
+              "Consequentemente suporte facilitado;",
+            ]}
             src={react}
             alt="icone do react"
           />
           <Acordion
             title="Bootstrap"
-            paragraph="skaopskaopskaopskaposaksopak"
+            items={[
+              "Um dos framework de estilo mais utilizados;",
+              "Amplamente estabelicido e conhecido pelo mercado;",
+              "Consequentemente suporte facilitado;",
+            ]}
             src={bootstrap}
             alt="icone do bootstrap"
           />
           <Acordion
             title="Figma"
-            paragraph="skaopskaopskaopskaposaksopak"
+            items={[
+              "Layouts focados em UI/UX design;",
+              "Pensados para a responsividade de dispositivos;",
+            ]}
             src={figma}
             alt="icone do figma"
           />
@@ -120,20 +146,32 @@ const Main = () => {
               "Desenvolvimento escalável (TS);",
             ]}
           />
-          <HBox title="React" className="title-box-h" items={[
-            "Biblioteca js/ts mais utilizadas pelo mercado;",
-            "Amplamente conhecido e estabelecido pelas empresas;",
-            "Consequentemente suporte facilitado;"
-          ]}/>
-          <HBox title="Bootstrap" className="title-box-h" items={[
-            "Um dos framework de estilo mais utilizados;",
-            "Amplamente estabelicido e conhecido pelo mercado;",
-            "Consequentemente suporte facilitado;"
-          ]}/>
-          <HBox title="Figma" className="title-box-h" items={[
-            "Layouts focados em UI/UX design;",
-            "Pensados para a responsividade de dispositivos;"
-          ]}/>
+          <HBox
+            title="React"
+            className="title-box-h"
+            items={[
+              "Biblioteca js/ts mais utilizadas pelo mercado;",
+              "Amplamente conhecido e estabelecido pelas empresas;",
+              "Consequentemente suporte facilitado;",
+            ]}
+          />
+          <HBox
+            title="Bootstrap"
+            className="title-box-h"
+            items={[
+              "Um dos framework de estilo mais utilizados;",
+              "Amplamente estabelicido e conhecido pelo mercado;",
+              "Consequentemente suporte facilitado;",
+            ]}
+          />
+          <HBox
+            title="Figma"
+            className="title-box-h"
+            items={[
+              "Layouts focados em UI/UX design;",
+              "Pensados para a responsividade de dispositivos;",
+            ]}
+          />
         </article>
       </Section>
       <Section className="section-portifolio">

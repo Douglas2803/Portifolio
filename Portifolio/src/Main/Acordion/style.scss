@@ -2,7 +2,7 @@
 @use "../../scss/media-query" as *;
 
 .accordion-item {
-  @include sm{
+  @include sm {
     display: none;
   }
   .button-accordion {
@@ -19,7 +19,7 @@
       width: 10vw;
       margin-left: 10px;
     }
-    .title-icon{
+    .title-icon {
       margin-left: 10px;
     }
   }
@@ -29,6 +29,17 @@
     width: 100%;
     height: 25vh;
     overflow-wrap: break-word;
+    .a-list {
+      li {
+        color: variables.$primary-color;
+        font-size: 0.9em;
+        margin-bottom: 0.7vh;
+        .a-check-icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
   }
 }
 

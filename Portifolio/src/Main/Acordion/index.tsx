@@ -7,12 +7,13 @@ import {
 } from "@chakra-ui/accordion";
 import { IoIosArrowDropdown } from "react-icons/io";
 import Content from "../../Content";
+import check from "../../assets/icon/check-icon.png";
 
 import "./style.scss";
 
 interface IPropsAcordion {
   title: string;
-  paragraph: string;
+  items: string[];
   src: string;
   src2?: string;
   alt: string;
@@ -20,7 +21,7 @@ interface IPropsAcordion {
 }
 const Acordion: React.FC<IPropsAcordion> = ({
   title,
-  paragraph,
+  items,
   src,
   src2,
   alt,
@@ -36,7 +37,15 @@ const Acordion: React.FC<IPropsAcordion> = ({
       </AccordionButton>
       <AccordionPanel className="text">
         <article>
-          <Content text={paragraph} className="content-skills" />
+          {items && (<ul className= "a-list">
+        {items && items.map((item, index) => (
+          <li key={index}>
+            <img src={check} alt="icone de check list" className="a-check-icon"/>
+            {item}
+          </li>
+        ))}
+      </ul>
+      )}
         </article>
       </AccordionPanel>
     </AccordionItem>

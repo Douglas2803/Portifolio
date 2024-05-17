@@ -32,19 +32,21 @@
     text-align: center;
   }
 
-  .h-list{
-    color: variables.$primary-color;
-    font-size: 0.7em;
-    list-style:none;
-    width: 100%;
-    height: 100%;
-    padding-left: 1vw;
-    li{
-      padding: 0.5vh 1vw;
-    }
-    .check-icon{
-      height: 2vh;
-      width: 2vw;
+  .h-list {
+    @include sm {
+      color: variables.$primary-color;
+      font-size: 0.7em;
+      list-style: none;
+      width: 100%;
+      height: 100%;
+      padding-left: 1vw;
+      li {
+        padding: 0.5vh 1vw;
+        .check-icon {
+          height: 2vh;
+          width: 2vw;
+        }
+      }
     }
   }
 
@@ -55,6 +57,5 @@
     margin: 3vh 1vw;
     border: 1px solid variables.$secondary-color;
     border-radius: 3vw;
-    margin-bottom: none;
   }
 }
