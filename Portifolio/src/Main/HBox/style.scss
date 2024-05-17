@@ -4,9 +4,9 @@
 .box {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 25vh;
-  margin-bottom: 2vh;
+  height: 27vh;
   background-color: variables.$background-secondary-color;
 
   .title-box-h {
@@ -17,22 +17,39 @@
     border-radius: 3vw;
     border: solid 1px;
     @include sm {
-      position: relative;
-      bottom: 13vh;
-      left: 3vw;
       width: auto;
+      position: relative;
+      right: 3.7vw;
+      bottom: 2vh;
     }
   }
+
   .title-box-p {
     background-color: variables.$secondary-color;
+    position: static;
     width: 100%;
     text-align: center;
+  }
 
-    @include sm {
-      width: 100%;
+  .h-list{
+    color: variables.$primary-color;
+    font-size: 0.7em;
+    list-style:none;
+    width: 100%;
+    height: 100%;
+    padding-left: 1vw;
+    li{
+      padding: 0.5vh 1vw;
+    }
+    .check-icon{
+      height: 2vh;
+      width: 2vw;
     }
   }
-  @include md {
+
+  @include sm {
+    display: flex;
+    flex-direction: column;
     width: 30%;
     margin: 3vh 1vw;
     border: 1px solid variables.$secondary-color;

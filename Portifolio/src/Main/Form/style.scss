@@ -46,14 +46,17 @@
     @include sm {
       &:nth-child(3) {
         height: 30vh;
-        display: flex; // Adiciona flexbox ao terceiro filho
-        align-items: center; // Alinha verticalmente o conteúdo
-        justify-content: center; // Opcional: alinha horizontalmente o conteúdo
+        display: flex;
+        align-items: center; 
+        justify-content: center;
       }
     }
   }
 
   @include sm {
     grid-column: 1/13;
+    border: 1px solid variables.$secondary-color;
+    border-top: none;
+    border-radius: 0 0 2vw 2vw;
   }
 }

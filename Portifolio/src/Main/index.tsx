@@ -90,12 +90,50 @@ const Main = () => {
           />
         </Accordion>
         <article className="h-box">
-          <HBox title="html" className="title-box-h" />
-          <HBox title="CSS/SASS" className="title-box-h" />
-          <HBox title="JS/TS" className="title-box-h" />
-          <HBox title="React" className="title-box-h" />
-          <HBox title="Bootstrap" className="title-box-h" />
-          <HBox title="Figma" className="title-box-h" />
+          <HBox
+            title="html"
+            className="title-box-h"
+            items={[
+              "Melhor ranqueamento",
+              "Experiência de usuário (UX)",
+              "Segurança",
+              "Acessibilidade",
+            ]}
+          />
+          <HBox
+            title="CSS/SASS"
+            className="title-box-h"
+            items={[
+              "Experiência de usuário (UX)",
+              "Responsividade",
+              "Mobile first",
+            ]}
+          />
+          <HBox
+            title="JS/TS"
+            className="title-box-h"
+            items={[
+              "Amplamente utilizado no mercado, com suporte facilitado",
+              "Interatividade na Web",
+              "Ecosistema de bibliotecas e frameworks ricos",
+              "Segurança e robustez (TS)",
+              "Desenvolvimento escalável (TS)",
+            ]}
+          />
+          <HBox title="React" className="title-box-h" items={[
+            "Biblioteca js/ts mais utilizadas pelo mercado",
+            "Amplamente conhecido e estabelecido pelas empresas",
+            "Consequentemente suporte facilitado"
+          ]}/>
+          <HBox title="Bootstrap" className="title-box-h" items={[
+            "Um dos framework de estilo mais utilizados",
+            "Amplamente estabelicido e conhecido pelo mercado",
+            "Consequentemente suporte facilitado"
+          ]}/>
+          <HBox title="Figma" className="title-box-h" items={[
+            "Layouts focados em UI/UX design",
+            "Pensados para a responsividade de dispositivos"
+          ]}/>
         </article>
       </Section>
       <Section className="section-portifolio">

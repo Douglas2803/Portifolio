@@ -23,8 +23,9 @@
   li {
     padding: 0.4vh 0;
   }
-  @include md{
-    font-size: 1.4em;
+  @include md {
+    font-size: 1.2em;
+    padding-bottom: 1vh;
   }
 }
 
@@ -47,5 +48,9 @@
       text-decoration: none;
       color: variables.$primary-color;
     }
+  }
+  @include sm {
+    border-radius: 2vw 2vw 0 0 ;
+    border-bottom: none;
   }
 }

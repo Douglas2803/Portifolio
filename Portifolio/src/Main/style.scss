@@ -19,8 +19,11 @@ main {
   .contatct {
     grid-column: 1/5;
     grid-row: 2/3;
-    @include sm{
+    @include sm {
       grid-column: 1/13;
+      border: 1px solid variables.$secondary-color;
+      border-radius: 2vw 2vw 0 0;
+      border-bottom: none;
     }
   }
 
@@ -40,7 +43,7 @@ main {
       font-weight: 400;
       font-size: 5vw;
     }
-    @include sm{
+    @include sm {
       grid-column: 1/13;
     }
   }
@@ -85,10 +88,9 @@ main {
     }
   }
 
-    @include sm {
+  @include sm {
     padding: 0 12vw;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 15vh auto 50vh 4vh 65vh auto auto auto auto;
   }
-
 }
