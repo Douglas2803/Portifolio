@@ -5,10 +5,11 @@ import './style.scss';
 interface IPropsSection{
     children: ReactNode;
     className?: string;
+    id?: string;
 }
-const Section:React.FC<IPropsSection> = ({children,className}) => {
+const Section:React.FC<IPropsSection> = ({children, className, id}) => {
   return (
-    <section className={className}>
+    <section className={className} id={id}>
         {children}
     </section>
   );

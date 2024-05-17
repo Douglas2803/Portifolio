@@ -8,7 +8,11 @@ interface IContentProps {
 }
 
 const Content: React.FC<IContentProps> = ({ text ,className}) => {
-  return <p className={`content ${className}`}>{text}</p>;
+  return (
+    <p className={`content ${className}`}>
+      {text}
+    </p>
+  );
 };
 
 export default Content;

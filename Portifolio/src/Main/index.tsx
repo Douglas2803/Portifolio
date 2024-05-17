@@ -42,7 +42,7 @@ const Main = () => {
       </p>
       <Rectangle />
       <Profile />
-      <Section className="section-acordion">
+      <Section className="section-acordion" id="habilidades">
         <Subtitle
           subtitle="Habilidades"
           className="subtitle-skills-portifolio"
@@ -174,7 +174,7 @@ const Main = () => {
           />
         </article>
       </Section>
-      <Section className="section-portifolio">
+      <Section className="section-portifolio" id="portifolio">
         <Subtitle
           subtitle="Portifólio"
           className="subtitle-skills-portifolio"
@@ -186,7 +186,7 @@ const Main = () => {
           <HBox title="Em breve" className="title-box-p" />
         </aside>
       </Section>
-      <Section className="section-contatc">
+      <Section className="section-contatc" id="contato">
         <Subtitle subtitle="Contato" className="subtitle-skills-portifolio" />
         <article className="contatct">
           <List

@@ -18,7 +18,7 @@ import "./style.scss";
 
 const Profile = () => {
   return (
-    <section className="section-perfil">
+    <section className="section-perfil" id="sobre">
       <div className="rectangle-avatar">
         <img src={Avatar} alt="Douglas em avatar" className="douglas-avatar" />
       </div>

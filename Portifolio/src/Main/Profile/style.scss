@@ -10,6 +10,7 @@
   grid-column: 1/5;
   height: 100%;
   background-color: variables.$background-secondary-color;
+  scroll-margin-top: 22vh;
 
   .rectangle-avatar {
     display: flex;

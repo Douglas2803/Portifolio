@@ -1,19 +1,28 @@
-import React from "react";
-import "./style.scss";
+import { useEffect, useState } from "react";
 import List from "../../List";
+import "./style.scss";
 
 interface IPropsNav {
   className?: string;
 }
 
 const Nav: React.FC<IPropsNav> = ({ className }) => {
+
   return (
     <nav className={`navigation ${className}`}>
       <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Habilidades</a></li>
-        <li><a href="#">Portifólio</a></li>
-        <li><a href="#">Contato</a></li>
+        <li>
+          <a href="#sobre">Sobre</a>
+        </li>
+        <li>
+          <a href="#habilidades">Habilidades</a>
+        </li>
+        <li>
+          <a href="#portifolio">Portifólio</a>
+        </li>
+        <li>
+          <a href="#contato">Contato</a>
+        </li>
       </ul>
     </nav>
   );
