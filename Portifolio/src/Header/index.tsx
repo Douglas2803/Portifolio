@@ -8,20 +8,20 @@ import "./style.scss";
 import "../variables/variables.scss";
 
 const Header = () => {
-  const [sidebarActive, setSidebarActive] = useState(false);
+  const [sidebarVisible, setSidebarVisible] = useState(false);
 
   const toggleSidebar = () => {
-    setSidebarActive(!sidebarActive);
+    setSidebarVisible(!sidebarVisible);
   };
 
   return (
     <header>
-      <Nav className="navigation-desktop" />
+      <Nav className="navigation-desktop"/>
       <Button text="BAIXAR CURRICULO" className="button-header" />
       <button className="button-hamburguer" onClick={toggleSidebar}>
         <GiHamburgerMenu className="icon-menu" />
       </button>
-      <Sidebar active={sidebarActive} setActive={setSidebarActive} />
+      <Sidebar active={sidebarVisible} setActive={setSidebarVisible} />
     </header>
   );
 };

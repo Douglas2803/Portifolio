@@ -9,7 +9,8 @@ interface IPropsSidebar {
 }
 
 const Sidebar: React.FC<IPropsSidebar> = ({ active, setActive }) => {
-  const closeSidebar = () => {
+  
+  const toggleSidebar = () => {
     setActive(false);
   };
 
@@ -19,10 +20,10 @@ const Sidebar: React.FC<IPropsSidebar> = ({ active, setActive }) => {
 
   return (
     <aside className={active ? "sidebar" : "sidebar-close"}>
-      <button className="button-close" onClick={closeSidebar}>
+      <button className="button-close" onClick={toggleSidebar}>
         <IoMdCloseCircleOutline className="close" />
       </button>
-      <Nav />
+      <Nav setActive={setActive} />
     </aside>
   );
 };

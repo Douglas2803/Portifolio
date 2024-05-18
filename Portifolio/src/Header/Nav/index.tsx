@@ -4,24 +4,38 @@ import "./style.scss";
 
 interface IPropsNav {
   className?: string;
+  setActive?: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Nav: React.FC<IPropsNav> = ({ className }) => {
+const Nav: React.FC<IPropsNav> = ({ className, setActive }) => {
+  const handleClick = () => {
+    if (setActive) {
+      setActive((prevActive) => !prevActive); 
+    }
+  };
 
   return (
     <nav className={`navigation ${className}`}>
       <ul>
         <li>
-          <a href="#sobre">Sobre</a>
+          <a href="#sobre" onClick={handleClick}>
+            Sobre
+          </a>
         </li>
         <li>
-          <a href="#habilidades">Habilidades</a>
+          <a href="#habilidades" onClick={handleClick}>
+            Habilidades
+          </a>
         </li>
         <li>
-          <a href="#portifolio">Portifólio</a>
+          <a href="#portifolio" onClick={handleClick}>
+            Portfólio
+          </a>
         </li>
         <li>
-          <a href="#contato">Contato</a>
+          <a href="#contato" onClick={handleClick}>
+            Contato
+          </a>
         </li>
       </ul>
     </nav>
