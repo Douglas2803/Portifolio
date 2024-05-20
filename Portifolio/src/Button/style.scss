@@ -11,7 +11,7 @@
   border-radius: 2vh;
   font-family: "Lato", sans-serif;
   font-weight: 600;
-  font-size: 0.6em;
+ 
 }
 
 .button-header {
@@ -19,10 +19,11 @@
   grid-column: 1/3;
   width: 100%;
   height: 6vh;
+   font-size: 0.6rem;
 
   @include sm {
     grid-column: 10/13;
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 
@@ -32,7 +33,7 @@
   height: 6.5vh;
   align-self: end;
   margin: 0 2vw;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   ul {
     display: flex;
   }

@@ -11,9 +11,9 @@ footer {
   padding: 4vw;
   color: variables.$secondary-color;
   border-top: 1px solid variables.$secondary-color;
-  font-size: 4vw;
+  font-size: 0.8rem;
 
   @include sm {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }

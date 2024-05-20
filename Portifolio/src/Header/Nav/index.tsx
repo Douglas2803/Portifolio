@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import List from "../../List";
 import "./style.scss";
 
 interface IPropsNav {
@@ -10,7 +8,7 @@ interface IPropsNav {
 const Nav: React.FC<IPropsNav> = ({ className, setActive }) => {
   const handleClick = () => {
     if (setActive) {
-      setActive((prevActive) => !prevActive); 
+      setActive((prevActive) => !prevActive);
     }
   };
 

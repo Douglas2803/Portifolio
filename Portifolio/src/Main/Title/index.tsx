@@ -1,4 +1,3 @@
-import React from "react";
 import Subtitle from "../Subtitle";
 import { MdArrowOutward } from "react-icons/md";
 import "./style.scss";

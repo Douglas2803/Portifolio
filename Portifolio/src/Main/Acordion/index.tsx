@@ -1,12 +1,9 @@
-import React from "react";
 import {
-  Accordion,
   AccordionItem,
   AccordionButton,
   AccordionPanel,
 } from "@chakra-ui/accordion";
 import { IoIosArrowDropdown } from "react-icons/io";
-import Content from "../../Content";
 import check from "../../assets/icon/check-icon.png";
 
 import "./style.scss";

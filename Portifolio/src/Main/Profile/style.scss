@@ -22,10 +22,9 @@
     height: 50%;
     align-self: end;
     .douglas-avatar {
-      width: 45vw;
-      height: 25vh;
-      @include md {
-        height: 40vh;
+      width: 100%;
+      @include sm{
+        width: 90%;
       }
     }
     @include md {
@@ -129,8 +128,8 @@
       z-index: -1;
     }
     .icon-item {
-      height: 5vh;
-      width: 5vw;
+      max-width: 100%;
+      max-height: 100%;
     }
   }
 }

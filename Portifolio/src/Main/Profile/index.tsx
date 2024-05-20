@@ -1,5 +1,4 @@
-import React from "react";
-import Avatar from "../../assets/img/Douglas avatar.png";
+import Avatar from "../../assets/img/Douglas-avatar 1.png";
 import Button from "../../Button";
 import List from "../../List";
 import Content from "../../Content";
@@ -11,8 +10,6 @@ import ts from "../../assets/icon/tp-icon.png";
 import react from "../../assets/icon/React.png";
 import bootstrap from "../../assets/icon/bootstrap.png";
 import figma from "../../assets/icon/figma-icon.png";
-import Avatar1 from "../../assets/img/Ellipse vermelha grande.png";
-import Avatar2 from "../../assets/img/Ellipse laranja pequena.png";
 
 import "./style.scss";
 

@@ -1,14 +1,13 @@
-import React from "react";
 import Title from "./Title";
 import Section from "../Section";
 import Profile from "./Profile";
-import Rectangle from "./Rectangle/intedx";
+import Rectangle from "./Rectangle/index";
 import Subtitle from "./Subtitle";
 import Acordion from "./Acordion";
 import List from "../List";
 import Form from "./Form";
 import { Accordion } from "@chakra-ui/accordion";
-import { MdArrowOutward } from "react-icons/md";
+import { FiArrowDownRight } from "react-icons/fi";
 import HBox from "./HBox";
 import html from "../assets/icon/html-icon.png";
 import css from "../assets/icon/css-icon.png";
@@ -18,8 +17,8 @@ import ts from "../assets/icon/tp-icon.png";
 import react from "../assets/icon/React.png";
 import bootstrap from "../assets/icon/bootstrap.png";
 import figma from "../assets/icon/figma-icon.png";
-import Avatar1 from "../assets/img/Ellipse vermelha grande.png";
-import Avatar2 from "../assets/img/Ellipse laranja pequena.png";
+import Avatar1 from "../assets/img/Ellipse-vermelha-grande.webp";
+import Avatar2 from "../assets/img/Ellipse-laranja-pequena.webp";
 
 import "./style.scss";
 
@@ -30,9 +29,11 @@ const Main = () => {
         <span className="subtittle-main-G">Olá,</span>me chamo{" "}
         <span className="subtittle-main-G">Douglas </span>seu
       </h2>
-      <Subtitle subtitle="Contato" className="subtitle-contact">
-        <MdArrowOutward className="arrow" />
-      </Subtitle>
+      <a href="#contato" className="link-contact">
+        <Subtitle subtitle="Contato" className="subtitle-contact">
+          <FiArrowDownRight className="arrow" />
+        </Subtitle>
+      </a>
       <Title />
       <img src={Avatar1} alt="Elipse vermelha" className="elipse-vermelha" />
       <img src={Avatar2} alt="Elipse laranja" className="elipse-laranja" />

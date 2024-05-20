@@ -7,18 +7,19 @@
   font-weight: 400;
 }
 
-.subtitle-contact {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.link-contact {
   grid-column: 2/4;
-  grid-row: 1/2;
-  width: 100%;
-  text-align: left;
-  font-size: 9vw;
-  border-bottom: 3px solid variables.$secondary-color;
+  text-decoration: none;
+  .subtitle-contact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    text-align: left;
+    font-size: 1.6rem;
+    border-bottom: 3px solid variables.$secondary-color;
+  }
 
-  
   @include md {
     display: none;
   }
@@ -32,7 +33,7 @@
   text-align: center;
   grid-row: 1/2;
   grid-column: 2/4;
-  font-size: 8vw;
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
   justify-content: center;

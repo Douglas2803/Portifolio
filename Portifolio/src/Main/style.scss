@@ -4,7 +4,7 @@
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 15vh auto 44vh 3vh 65vh auto auto auto auto;
+  grid-template-rows: 15vh auto 50vh 5vh 65vh auto auto auto auto;
   grid-column-gap: 2vw;
   width: 100%;
   height: auto;
@@ -14,6 +14,7 @@ main {
   .arrow {
     position: relative;
     top: 1vh;
+    font-size: 1.6rem;
   }
 
   .contatct {
@@ -50,7 +51,7 @@ main {
 
   .elipse-vermelha {
     position: absolute;
-    top: 60vh;
+    top: 66vh;
     left: 27vw;
     width: 45vw;
     z-index: 998;
@@ -63,7 +64,7 @@ main {
 
   .elipse-laranja {
     position: absolute;
-    top: 55vh;
+    top: 60vh;
     left: 27vw;
     width: 20vw;
     z-index: 997;
