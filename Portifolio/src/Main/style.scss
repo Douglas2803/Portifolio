@@ -115,14 +115,20 @@ main {
   .sub-text {
     color: variables.$primary-color;
     position: absolute;
-    top: 70vh;
+    top: 35vh;
     left: 57vw;
+    font-size: 1rem;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 1.2rem;
     margin-top: 2vh;
+    margin-right: 1vw;
     @media screen and (max-width: 767px) {
       display: none;
+    }
+
+    @include rwd(1400){
+      top: 45vh;
+      font-size: 2rem;
     }
   }
 
