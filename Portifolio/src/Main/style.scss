@@ -3,8 +3,9 @@
 
 main {
   display: grid;
+  position: relative;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 15vh auto 50vh 5vh 65vh auto auto auto auto;
+  grid-template-rows: 15vh auto 55vh 5vh 65vh auto auto auto auto;
   grid-column-gap: 2vw;
   width: 100%;
   height: auto;
@@ -47,32 +48,67 @@ main {
     @include sm {
       grid-column: 1/13;
     }
+    @include lg {
+      grid-column: 3/11;
+    }
+
+    
   }
 
   .elipse-vermelha {
     position: absolute;
-    top: 66vh;
-    left: 27vw;
-    width: 45vw;
+    top: 50vh;
+    left: 24vw;
+    width: 50vw;
     z-index: 998;
     @include md {
-      top: 65vh;
-      left: 27vw;
-      width: 17vw;
+      top: 50vh;
+      left: 20vw;
+      width: 30%;
+    }
+    @include lg {
+      top: 43vh;
+      left: 17vw;
+      width: 30%;
+    }
+    @include xl {
+      top: 43vh;
+      left: 17%;
+      max-width: 400px;
+    }
+
+    @include rwd(1800) {
+      top: 53vh;
+      left: 30%;
     }
   }
 
   .elipse-laranja {
     position: absolute;
-    top: 60vh;
+    top: 43vh;
     left: 27vw;
-    width: 20vw;
+    width: 24vw;
     z-index: 997;
 
     @include md {
-      top: 61vh;
-      left: 25vw;
-      width: 8vw;
+      top: 45vh;
+      left: 20vw;
+      width: 15vw;
+    }
+    @include lg {
+      top: 35vh;
+      left: 20vw;
+      width: 15vw;
+    }
+    @include xl {
+      top: 36vh;
+      left: 20vw;
+      max-width: 200px;
+    }
+
+      @include rwd(1800) {
+      top: 47vh;
+      left: 29vw;
     }
   }
 
@@ -80,11 +116,12 @@ main {
     color: variables.$primary-color;
     position: absolute;
     top: 70vh;
-    left: 60vw;
+    left: 57vw;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 1.2em;
-    @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+    margin-top: 2vh;
+    @media screen and (max-width: 767px) {
       display: none;
     }
   }

@@ -27,7 +27,7 @@
         width: 90%;
       }
     }
-    @include md {
+    @include sm {
       grid-row: 3/4;
       grid-column: 1/6;
     }
@@ -39,7 +39,7 @@
     grid-column: 3/5;
     grid-row: 2/3;
 
-    @include md {
+    @include sm {
       grid-row: 3/5;
       grid-column: 6/13;
     }
@@ -57,7 +57,7 @@
       font-size: 1em;
     }
 
-    @include md {
+    @include sm {
       grid-column: 5/13;
       grid-row: 1/2;
       background-color: variables.$background-secondary-color;
@@ -88,11 +88,8 @@
       }
     }
   }
-  @include sm{
-    grid-column: 1/5;
-  }
 
-  @include md {
+  @include sm {
     grid-column: 1/13;
     grid-row: 5/6;
     grid-template-columns: repeat(12, 1fr);
@@ -105,7 +102,7 @@
     @media screen and (max-width: 768px) {
       display: none;
     }
-    @include md {
+    @include sm {
       grid-column: 1/13;
       grid-row: 3/4;
       background-color: variables.$background-secondary-color;
@@ -117,7 +114,7 @@
     @media screen and (max-width: 768px) {
       display: none;
     }
-    @include md {
+    @include sm {
       grid-column: 5/13;
       grid-row: 2/3;
       display: flex;

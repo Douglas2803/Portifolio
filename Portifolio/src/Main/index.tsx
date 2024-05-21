@@ -39,7 +39,7 @@ const Main = () => {
       <img src={Avatar2} alt="Elipse laranja" className="elipse-laranja" />
       <p className="sub-text">
         Desenvolvimento de sites criativos e eficientes
-        <br /> para seu negócio
+        <br /> para seu negócio.
       </p>
       <Rectangle />
       <Profile />

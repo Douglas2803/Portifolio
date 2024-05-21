@@ -21,9 +21,9 @@
   height: 6vh;
    font-size: 0.6rem;
 
-  @include sm {
+  @include md {
     grid-column: 10/13;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 

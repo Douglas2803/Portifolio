@@ -18,12 +18,12 @@
   justify-content: flex-end;
   color: variables.$primary-color;
   list-style: none;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   height: 100%;
   li {
     padding: 0.4vh 0;
   }
-  @include md {
+  @include sm {
     font-size: 1em;
     padding-bottom: 1vh;
   }
@@ -53,7 +53,7 @@
     border-radius: 2vw 2vw 0 0 ;
     border-bottom: none;
      li {
-      font-size: 0.6em;
+    font-size: 0.6em;
     margin-bottom: 2vh;
     .name-item {
       color: variables.$secondary-color;

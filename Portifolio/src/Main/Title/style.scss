@@ -16,6 +16,9 @@
     font-weight: 400;
     font-size: 1.6rem;
     margin-bottom: 0.6vh;
+    @include sm {
+      font-size: 2rem;
+    }
 
     @include md {
       display: none;
@@ -24,7 +27,7 @@
   .role {
     font-family: "Notable", sans-serif;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin-bottom: 0.9vh;
 
     .subtitle-contact-desktop {
@@ -33,12 +36,18 @@
       }
 
       @include md {
+        display: flex;
         position: relative;
-        top: 2.4em;
-        left: -4.4em;
-        font-size: 4.4vw;
-        text-decoration: underline variables.$secondary-color;
+        left: -17vw;
+        top: 62%;
+        text-align: left;
+        font-size: 3vw;
+        padding-left: 4vw;
       }
+    }
+
+    @include sm {
+      font-size: 1.6rem;
     }
 
     @include md {
@@ -47,9 +56,17 @@
       font-size: 6.4vw;
       padding-left: 4vw;
     }
+
+    @include lg{
+      font-size: 4vw;
+    }
   }
 
-  @include sm{
+  @include sm {
     grid-column: 1/13;
+  }
+
+  @include lg{
+    grid-column: 3/11;
   }
 }

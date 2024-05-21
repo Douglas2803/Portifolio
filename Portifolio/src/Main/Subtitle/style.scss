@@ -20,14 +20,15 @@
     border-bottom: 3px solid variables.$secondary-color;
   }
 
+  @include sm{
+    grid-column: 5/9;
+  }
+
   @include md {
     display: none;
   }
 }
 
-.subtitle-contact-desktop {
-  display: flex;
-}
 
 .subtitle-skills-portifolio {
   text-align: center;
