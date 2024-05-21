@@ -25,6 +25,7 @@
     }
   }
   .role {
+    position: relative;
     font-family: "Notable", sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -34,15 +35,30 @@
       @media screen and (max-width: 768px) {
         display: none;
       }
+      
 
       @include md {
         display: flex;
-        position: relative;
-        left: -17vw;
+        position: absolute;
+        left: 45vw;
         top: 62%;
         text-align: left;
-        font-size: 3vw;
+        font-size: 5vw;
         padding-left: 4vw;
+        text-decoration: underline variables.$secondary-color;
+        .arrow-d{
+          margin-top: 0.8vh;
+          font-size: 4vw;
+        }
+      }
+      @include xl{
+        left: 30vw;
+        top: 62%;
+        font-size: 2.5vw;
+        .arrow-d{
+          margin-top: 0.4vh;
+          font-size: 2.5vw;
+        }
       }
     }
 
@@ -57,7 +73,7 @@
       padding-left: 4vw;
     }
 
-    @include lg{
+    @include xl{
       font-size: 4vw;
     }
   }
@@ -66,7 +82,7 @@
     grid-column: 1/13;
   }
 
-  @include lg{
+  @include xl{
     grid-column: 3/11;
   }
 }

@@ -33,7 +33,12 @@
   }
 
     @include xl{
-    top: 68vh;
+    top: 60vh;
     height: 13vh;
+  }
+
+  @include rwd(1800){
+    top: 66vh;
+    height: 15vh;
   }
 }

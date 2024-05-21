@@ -1,5 +1,5 @@
 import Subtitle from "../Subtitle";
-import { MdArrowOutward } from "react-icons/md";
+import { FiArrowDownRight } from "react-icons/fi";
 import "./style.scss";
 
 const Title = () => {
@@ -9,9 +9,11 @@ const Title = () => {
         <span className="name">Douglas Giacomelli</span>
         <span className="role">
           Desenvolvedor Frontend
-          <Subtitle subtitle="Contato" className="subtitle-contact-desktop">
-            <MdArrowOutward className="arrow" />
-          </Subtitle>
+          <a href="#contato">
+            <Subtitle subtitle="Contato" className="subtitle-contact-desktop">
+              <FiArrowDownRight className="arrow-d" />
+            </Subtitle>
+          </a>
         </span>
       </h1>
     </>
