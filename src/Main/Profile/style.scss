@@ -23,7 +23,7 @@
     align-self: end;
     .douglas-avatar {
       width: 100%;
-      @include sm{
+      @include sm {
         width: 90%;
       }
     }
@@ -53,14 +53,12 @@
     grid-row: 3/4;
     font-size: 3vh;
     position: relative;
-
     @include sm {
       grid-column: 5/13;
       grid-row: 1/2;
       background-color: variables.$background-secondary-color;
       border-radius: 7vh;
       font-size: 1em;
-      position: absolute;
 
       &::before {
         content: "";
@@ -69,8 +67,8 @@
         height: 3.2vh;
         border-left: 11vw solid transparent;
         border-bottom: 10vh solid variables.$primary-color;
-        top: 20vh;
-        left: 10vw;
+        top: 2.2vh;
+        left: 4vw;
         transform: translate(-100%, 100%);
         overflow: visible;
         z-index: -1;
