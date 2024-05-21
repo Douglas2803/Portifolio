@@ -19,7 +19,6 @@ const Profile = () => {
       <div className="rectangle-avatar">
         <img src={Avatar} alt="Douglas em avatar" className="douglas-avatar" />
       </div>
-      <Button text="Contacte-me" className="button-profile" />
       <article className="article-perfil">
         <List
           items={[

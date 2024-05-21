@@ -15,17 +15,20 @@
 .items-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content:end;
   color: variables.$primary-color;
   list-style: none;
   font-size: 0.6rem;
   height: 100%;
   li {
-    padding: 0.4vh 0;
+    padding: 0.9vh 0;
   }
   @include sm {
-    font-size: 1em;
+    font-size: 1.3em;
     padding-bottom: 1vh;
+  }
+  @include rwd (1400){
+    font-size: 1.8em;
   }
 }
 
@@ -53,7 +56,7 @@
     border-radius: 2vw 2vw 0 0 ;
     border-bottom: none;
      li {
-    font-size: 0.6em;
+    font-size: 0.6rem;
     margin-bottom: 2vh;
     .name-item {
       color: variables.$secondary-color;

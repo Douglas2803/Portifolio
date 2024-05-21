@@ -4,7 +4,7 @@ import './style.scss'
 
 interface IButtonProps {
     text: string ;
-    className: string;
+    className?: string;
 }
 
 const Button: React.FC<IButtonProps> = (props) => {
