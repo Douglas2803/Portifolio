@@ -1,9 +1,14 @@
-@use '../variables/variables.scss';
+@use "../variables/variables.scss";
+@use "../scss/media-query" as *;
 
-.content{
-font-family: "Lato", sans-serif;
-color: variables.$primary-color;
-text-align: justify;
-padding: 1vh;
-font-size: 0.9rem;
+.content {
+  font-family: "Lato", sans-serif;
+  color: variables.$primary-color;
+  text-align: justify;
+  padding: 1vh;
+  font-size: 0.9rem;
+
+  @include rwd(1300) {
+    font-size: 1.3rem;
+  }
 }

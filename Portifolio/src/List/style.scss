@@ -15,7 +15,7 @@
 .items-content {
   display: flex;
   flex-direction: column;
-  justify-content:end;
+  justify-content: end;
   color: variables.$primary-color;
   list-style: none;
   font-size: 0.6rem;
@@ -27,7 +27,7 @@
     font-size: 1.3em;
     padding-bottom: 1vh;
   }
-  @include rwd (1400){
+  @include rwd(1400) {
     font-size: 1.8em;
   }
 }
@@ -53,18 +53,30 @@
     }
   }
   @include sm {
-    border-radius: 2vw 2vw 0 0 ;
+    border-radius: 2vw 2vw 0 0;
     border-bottom: none;
-     li {
-    font-size: 0.6rem;
-    margin-bottom: 2vh;
-    .name-item {
-      color: variables.$secondary-color;
-    }
-    a {
-      text-decoration: none;
-      color: variables.$primary-color;
+    li {
+      font-size: 0.9rem;
+      margin-bottom: 2vh;
+      .name-item {
+        color: variables.$secondary-color;
+      }
+      a {
+        text-decoration: none;
+        color: variables.$primary-color;
+      }
     }
   }
+
+  @include md {
+    li {
+      font-size: 1.6rem;
+    }
+  }
+
+  @include xl {
+    li {
+      font-size: 2rem;
+    }
   }
 }

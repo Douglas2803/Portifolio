@@ -54,14 +54,12 @@
     font-size: 3vh;
 
     @include sm {
-      font-size: 1em;
-    }
-
-    @include sm {
       grid-column: 5/13;
       grid-row: 1/2;
       background-color: variables.$background-secondary-color;
       border-radius: 7vh;
+      font-size: 1em;
+      position: relative;
 
       &::before {
         content: "";
@@ -70,21 +68,11 @@
         height: 3.2vh;
         border-left: 11vw solid transparent;
         border-bottom: 10vh solid variables.$primary-color;
-        top: 99vh;
-        left: 46vw;
+        top: 2.7vh;
+        left: 10vw;
         transform: translate(-100%, 100%);
         overflow: visible;
         z-index: -1;
-      }
-      @include lg {
-        &::before {
-          top: 99.4vh;
-        }
-      }
-      @include xl {
-        &::before {
-          top: 110vh;
-        }
       }
     }
   }

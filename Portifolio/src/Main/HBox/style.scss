@@ -36,7 +36,7 @@
   .h-list {
     @include sm {
       color: variables.$primary-color;
-      font-size: 0.7em;
+      font-size: 0.6em;
       list-style: none;
       width: 100%;
       height: 100%;
@@ -48,6 +48,9 @@
           width: 2vw;
         }
       }
+    }
+    @include rwd (1400){
+      font-size: 1em;
     }
   }
 

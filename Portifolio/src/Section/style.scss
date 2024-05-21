@@ -16,7 +16,7 @@
   }
   @include sm {
     grid-row: 6/7;
-    grid-column: 1/5;
+    grid-column: 1/13;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto auto;
   }
@@ -25,7 +25,7 @@
   }
 
   .h-box {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 576px) {
       display: none;
     }
     grid-column: 1/13;
