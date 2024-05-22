@@ -49,7 +49,7 @@ const Form = () => {
     if (showModal) {
       const timer = setTimeout(() => {
         setShowModal(false);
-      }, 1000);
+      }, 2000);
 
       return () => clearTimeout(timer);
     }

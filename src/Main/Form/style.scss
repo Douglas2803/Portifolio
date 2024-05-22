@@ -2,8 +2,12 @@
 @use "../../scss/media-query" as *;
 
 .form-group {
-  grid-column: 1/13;
+  grid-column: 1/5;
   position: relative;
+
+  @include sm {
+    grid-column: 1/13;
+  }
 
   .form {
     display: flex;
@@ -70,16 +74,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 68vw;
-    height: 17vh;
+    width: 81vw;
+    height: 25vh;
     bottom: 12vh;
-    left: 4vw;
+    left: 3.5vw;
     background-color: green;
-    border: 1px solid variables.$primary-color;
-    border-radius: 3vw;
-    .modal-content{
-      color: variables.$primary-color;
-      font-size: 2rem;
+    border: 1px solid rgba(206, 255, 206, 0.716);
+    border-radius: 1vw;
+
+    @include sm {
+      width: 69vw;
+      height: 5vh;
+    }
+    .modal-content {
+      color: rgba(243, 249, 243, 0.716);
+      font-size: 0.8rem;
+      
+      @include sm{
+         font-size: 1rem;
+      }
+
+      @include xl{
+         font-size: 1.6rem;
+      }
     }
   }
 }
