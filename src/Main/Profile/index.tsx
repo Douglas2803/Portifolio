@@ -1,5 +1,4 @@
 import Avatar from "../../assets/img/Douglas-avatar 1.png";
-import Button from "../../Button";
 import List from "../../List";
 import Content from "../../Content";
 import html from "../../assets/icon/html-icon.png";

@@ -21,24 +21,28 @@
     position: absolute;
     left: 0;
     top: 60vh;
-    height: 10vh;
-    width: 55%;
+    height: auto;
+    max-width: 80%;
     border-radius: 0 100px 100px 0;
     z-index: 998;
   }
 
   @include lg{
     top: 60vh;
-    height: 13vh;
+    max-width: 80%;
   }
 
     @include xl{
-    top: 60vh;
-    height: 13vh;
+    top: 62vh;
   }
 
-  @include rwd(1800){
-    top: 66vh;
-    height: 15vh;
+  @include rwd(1400){
+    top: 64vh;
+    max-width: 70%;
+  }
+
+   @include rwd(2500){
+    top: 65vh;
+    max-width: 100%;
   }
 }

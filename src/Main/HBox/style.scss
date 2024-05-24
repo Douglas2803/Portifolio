@@ -44,8 +44,8 @@
       li {
         padding: 0.5vh 1vw;
         .check-icon {
-          height: 2vh;
-          width: 2vw;
+          height: auto;
+          max-width: 100%;
         }
       }
     }

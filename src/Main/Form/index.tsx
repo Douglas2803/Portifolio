@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 import "./style.scss";
-import { FaDove } from "react-icons/fa";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -19,6 +18,8 @@ const Form = () => {
 
   function sendEmail(e: any) {
     e.preventDefault();
+
+    if(!validateFields()) return;
 
     const templateParams = {
       from_name: name,

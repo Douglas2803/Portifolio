@@ -1,4 +1,3 @@
-import React from "react";
 import Avatar from "../../assets/img/Douglas avatar.png";
 import Button from "../../Button";
 import List from "../../List";

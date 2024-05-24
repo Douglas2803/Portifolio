@@ -1,5 +1,5 @@
 import Avatar1 from "../../assets/img/rectangle-sm.webp";
-import Avatar2 from "../../assets/img/Rectangle.webp";
+import Avatar2 from "../../assets/img/rectangle.webp";
 
 import "./style.scss";
 
