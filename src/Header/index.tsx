@@ -16,9 +16,18 @@ const Header = () => {
 
   return (
     <header>
-      <Nav className="navigation-desktop"/>
-      <Button text="BAIXAR CURRICULO" className="button-header" />
-      <button className="button-hamburguer" onClick={toggleSidebar} aria-label="Botão hamburguer">
+      <Nav className="navigation-desktop" />
+      <a
+        href="src/assets/files/Currículo Tecnologia da Informação Moderno Azul.pdf"
+        download
+        className="button button-header"
+      >Download Curriculo</a>
+      {/* <Button text="BAIXAR CURRICULO" className="button-header" /> */}
+      <button
+        className="button-hamburguer"
+        onClick={toggleSidebar}
+        aria-label="Botão hamburguer"
+      >
         <GiHamburgerMenu className="icon-menu" />
       </button>
       <Sidebar active={sidebarVisible} setActive={setSidebarVisible} />
