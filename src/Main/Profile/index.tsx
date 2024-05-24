@@ -34,9 +34,7 @@ const Profile = () => {
           text="Como estudante de Análise e Desenvolvimento de Sistemas, tenho me dedicado ao desenvolvimento web 
           com uma ênfase especial na otimização de busca e na experiência do usuário (UI/UX design). Minha paixão
           é criar soluções que não apenas atendam às necessidades funcionais, mas que também proporcionem uma 
-          experiência envolvente e intuitiva para o usuário final. Estou constantemente aprimorando minhas 
-          habilidades técnicas e explorando novas técnicas e tecnologias para oferecer as melhores soluções
-          possíveis."
+          experiência envolvente e intuitiva para o usuário final."
         />
       </article>
       <aside className="icons-items">

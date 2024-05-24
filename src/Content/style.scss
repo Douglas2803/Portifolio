@@ -6,7 +6,11 @@
   color: variables.$primary-color;
   text-align: justify;
   padding: 1vh;
-  font-size: 1rem;
+  font-size: 0.8rem;
+
+  @include md{
+    font-size: 1rem;
+  }
 
   @include rwd(1300) {
     font-size: 1.3rem;

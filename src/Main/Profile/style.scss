@@ -22,9 +22,11 @@
     height: 50%;
     align-self: end;
     .douglas-avatar {
-      width: 100%;
+      max-width: 100%;
+      min-width: 300px;
+      height: auto;
       @include sm {
-        width: 90%;
+        max-width: 70%;
       }
     }
     @include sm {
@@ -58,7 +60,7 @@
       grid-row: 1/2;
       background-color: variables.$background-secondary-color;
       border-radius: 7vh;
-      font-size: 1em;
+      font-size: 0.7em;
 
       &::before {
         content: "";
