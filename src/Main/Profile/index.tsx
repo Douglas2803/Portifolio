@@ -31,13 +31,12 @@ const Profile = () => {
       </article>
       <article className="article-content">
         <Content
-          text="Lorem ipsum dolor sit amet. Et do
-            lorum reiciendis nam voluptatem 
-            doloribus ingalisum excepturi aut
-            mollitia laboriosam et quia exped
-            ita est deserunt rerum ut eveniet 
-            quas. Qui officiis amet sit velit vol
-            uptas qui ullam mollitia."
+          text="Como estudante de Análise e Desenvolvimento de Sistemas, tenho me dedicado ao desenvolvimento web 
+          com uma ênfase especial na otimização de busca e na experiência do usuário (UI/UX design). Minha paixão
+          é criar soluções que não apenas atendam às necessidades funcionais, mas que também proporcionem uma 
+          experiência envolvente e intuitiva para o usuário final. Estou constantemente aprimorando minhas 
+          habilidades técnicas e explorando novas técnicas e tecnologias para oferecer as melhores soluções
+          possíveis."
         />
       </article>
       <aside className="icons-items">
