@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Button from "../Button";
 import Nav from "./Nav";
 import Sidebar from "./Sidebar";
 
