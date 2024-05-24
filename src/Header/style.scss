@@ -41,3 +41,36 @@ header {
     height: 14vh;
   }
 }
+
+.button {
+  background-color: variables.$secondary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  border: 1px solid variables.$primary-color;
+  border-radius: 2vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+
+.button-header {
+  display: grid;
+  grid-column: 1/3;
+  width: 100%;
+  height: 6vh;
+  font-size: 0.8rem;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+
+
+  @include md {
+    grid-column: 10/13;
+    font-size: 0.7rem;
+  }
+
+  @include lg{
+    font-size: 0.9rem;
+  }
+}

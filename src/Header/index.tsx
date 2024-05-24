@@ -21,7 +21,6 @@ const Header = () => {
         download
         className="button button-header"
       >Download Curriculo</a>
-      {/* <Button text="BAIXAR CURRICULO" className="button-header" /> */}
       <button
         className="button-hamburguer"
         onClick={toggleSidebar}
