@@ -29,7 +29,7 @@ const Main = () => {
         <span className="subtittle-main-G">Olá,</span>me chamo{" "}
         <span className="subtittle-main-G">Douglas </span>seu
       </h2>
-      <a href="#contato" className="link-contact">
+      <a href="#contato" className="link-contact" aria-label="Contato">
         <Subtitle subtitle="Contato" className="subtitle-contact">
           <FiArrowDownRight className="arrow" />
         </Subtitle>

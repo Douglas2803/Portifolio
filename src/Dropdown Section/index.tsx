@@ -23,7 +23,9 @@ const DropdownSection: React.FC<IPropsDropdownSection> = ({ items }) => {
     <ul>
       {items.map((item, index) => (
         <li key={index}>
-          <button onClick={() => toggleDropdown(index)}>{item.title}</button>
+          <button onClick={() => toggleDropdown(index)} aria-label="Botão do dropdown">
+            {item.title}
+          </button>
           {openDropdownIndex === index && <p>{item.paragraph}</p>}
         </li>
       ))}

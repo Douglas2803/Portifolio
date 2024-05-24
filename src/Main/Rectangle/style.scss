@@ -2,12 +2,16 @@
 
 .rectangle-small {
   position: absolute;
-  height: 15vh;
-  width: 100%;
+  height: auto;
+  max-width: 100%;
   left: 0;
   top: 68vh;
   align-self: end;
   z-index: 998;
+
+  @include sm {
+    top: 67vh;
+  }
   @include md {
     display: none;
   }
@@ -27,21 +31,21 @@
     z-index: 998;
   }
 
-  @include lg{
+  @include lg {
     top: 60vh;
     max-width: 80%;
   }
 
-    @include xl{
+  @include xl {
     top: 62vh;
   }
 
-  @include rwd(1400){
+  @include rwd(1400) {
     top: 64vh;
     max-width: 70%;
   }
 
-   @include rwd(2500){
+  @include rwd(2500) {
     top: 65vh;
     max-width: 100%;
   }

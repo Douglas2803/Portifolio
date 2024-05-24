@@ -9,7 +9,7 @@ const Title = () => {
         <span className="name">Douglas Giacomelli</span>
         <span className="role">
           Desenvolvedor Frontend
-          <a href="#contato">
+          <a href="#contato" aria-label="contato">
             <Subtitle subtitle="Contato" className="subtitle-contact-desktop">
               <FiArrowDownRight className="arrow-d" />
             </Subtitle>

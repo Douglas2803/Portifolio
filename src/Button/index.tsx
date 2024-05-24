@@ -9,8 +9,10 @@ interface IButtonProps {
 
 const Button: React.FC<IButtonProps> = (props) => {
   return (
-    <button className={`button ${props.className}`}>{props.text}</button>
-  )
+    <button className={`button ${props.className}`}>
+      {props.text}
+    </button>
+  );
 }
 
 export default Button

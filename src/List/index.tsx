@@ -17,7 +17,7 @@ const List: React.FC<IListProps> = ({ items, className, link, textLink }) => {
           {link && textLink ? (
             <>
               <span className="name-item">{item}<br/></span>
-              <a href={link[index]}>{textLink[index]}</a>
+              <a href={link[index]} aria-label="Lista">{textLink[index]}</a>
             </>
           ) : (
             item

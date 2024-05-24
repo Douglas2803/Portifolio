@@ -18,7 +18,7 @@ const Header = () => {
     <header>
       <Nav className="navigation-desktop"/>
       <Button text="BAIXAR CURRICULO" className="button-header" />
-      <button className="button-hamburguer" onClick={toggleSidebar}>
+      <button className="button-hamburguer" onClick={toggleSidebar} aria-label="Botão hamburguer">
         <GiHamburgerMenu className="icon-menu" />
       </button>
       <Sidebar active={sidebarVisible} setActive={setSidebarVisible} />

@@ -16,22 +16,22 @@ const Nav: React.FC<IPropsNav> = ({ className, setActive }) => {
     <nav className={`navigation ${className}`}>
       <ul>
         <li>
-          <a href="#sobre" onClick={handleClick}>
+          <a href="#sobre" onClick={handleClick} aria-label="Sobre">
             Sobre
           </a>
         </li>
         <li>
-          <a href="#habilidades" onClick={handleClick}>
+          <a href="#habilidades" onClick={handleClick} aria-label="Habilidades">
             Habilidades
           </a>
         </li>
         <li>
-          <a href="#portifolio" onClick={handleClick}>
+          <a href="#portifolio" onClick={handleClick} aria-label="Portifólio">
             Portfólio
           </a>
         </li>
         <li>
-          <a href="#contato" onClick={handleClick}>
+          <a href="#contato" onClick={handleClick} aria-label="Contato">
             Contato
           </a>
         </li>
