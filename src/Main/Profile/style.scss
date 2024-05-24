@@ -27,6 +27,10 @@
       height: auto;
       @include sm {
         max-width: 70%;
+        min-width: 230px;
+      }
+      @include md {
+        min-width: 300px;
       }
     }
     @include sm {
