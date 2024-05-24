@@ -31,7 +31,7 @@ const Profile = () => {
       </article>
       <article className="article-content">
         <Content
-          text="Como estudante de Análise e Desenvolvimento de Sistemas, tenho me dedicado ao desenvolvimento web 
+          text="Sou graduando Análise e Desenvolvimento de Sistemas e tenho me dedicado ao desenvolvimento web 
           com uma ênfase especial na otimização de busca e na experiência do usuário (UI/UX design). Minha paixão
           é criar soluções que não apenas atendam às necessidades funcionais, mas que também proporcionem uma 
           experiência envolvente e intuitiva para o usuário final."
