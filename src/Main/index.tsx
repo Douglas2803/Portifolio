@@ -19,6 +19,7 @@ import bootstrap from "../assets/icon/bootstrap.png";
 import figma from "../assets/icon/figma-icon.png";
 import Avatar1 from "../assets/img/Ellipse-vermelha-grande.webp";
 import Avatar2 from "../assets/img/Ellipse-laranja-pequena.webp";
+import Douglas from "../assets/img/douglas.webp";
 
 import "./style.scss";
 
@@ -35,6 +36,7 @@ const Main = () => {
         </Subtitle>
       </a>
       <Title />
+      <img src={Douglas} alt="Douglas" className="douglas-photo" />
       <img src={Avatar1} alt="Elipse vermelha" className="elipse-vermelha" />
       <img src={Avatar2} alt="Elipse laranja" className="elipse-laranja" />
       <p className="sub-text">

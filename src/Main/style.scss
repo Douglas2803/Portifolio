@@ -51,24 +51,29 @@ main {
     @include lg {
       grid-column: 3/11;
     }
-
-    
   }
 
   .elipse-vermelha {
     position: absolute;
-    top: 50vh;
-    left: 24vw;
-    width: 50vw;
-    z-index: 998;
+    top: 37vh;
+    left: 10vw;
+    width: 60vw;
+    z-index: -1;
+
+    @include sm {
+      top: 37vh;
+      left: 10vw;
+      width: 55vw;
+    }
+
     @include md {
-      top: 50vh;
-      left: 20vw;
-      width: 30%;
+      top: 35vh;
+      left: 6vw;
+      width: 50%;
     }
     @include lg {
-      top: 43vh;
-      left: 17vw;
+      top: 40vh;
+      left: 10vw;
       width: 30%;
     }
     @include xl {
@@ -78,26 +83,26 @@ main {
     }
 
     @include rwd(1800) {
-      top: 53vh;
-      left: 30%;
+      top: 40vh;
+      left: 18%;
     }
   }
 
   .elipse-laranja {
     position: absolute;
-    top: 43vh;
-    left: 27vw;
+    top: 33vh;
+    left: 50vw;
     width: 24vw;
-    z-index: 997;
+    z-index: -2;
 
     @include md {
-      top: 45vh;
-      left: 20vw;
+      top: 30vh;
+      left: 10vw;
       width: 15vw;
     }
     @include lg {
       top: 35vh;
-      left: 20vw;
+      left: 25vw;
       width: 15vw;
     }
     @include xl {
@@ -106,9 +111,20 @@ main {
       max-width: 200px;
     }
 
-      @include rwd(1800) {
-      top: 47vh;
-      left: 29vw;
+    @include rwd(1400) {
+     max-width: 350px;
+     top: 31.1vh;
+   }
+
+    @include rwd(1800) {
+      top: 28vh;
+      left: 10vw;
+    }
+
+
+    @include rwd(2500) {
+      max-width: 350px;
+      top: 29.1vh;
     }
   }
 
@@ -126,9 +142,43 @@ main {
       display: none;
     }
 
-    @include rwd(1400){
+    @include rwd(1400) {
       top: 45vh;
       font-size: 2rem;
+    }
+  }
+
+  .douglas-photo {
+    position: absolute;
+    height: auto;
+    max-width: 300px;
+    top: 39.8vh;
+    left: 6vw;
+    z-index: 998;
+
+    @include sm {
+      top: 38.6vh;
+      left: 15vw;
+    }
+
+    @include md {
+      top: 31.7vh;
+    }
+
+    @include xl {
+      max-width: 350px;
+      top: 29.1vh;
+    }
+
+    @include rwd(1400) {
+      max-width: 350px;
+      top: 31.1vh;
+    }
+
+    @include rwd(2500) {
+      max-width: 450px;
+      top: 22.7vh;
+      left: 10vw;
     }
   }
 
