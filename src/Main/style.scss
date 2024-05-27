@@ -157,16 +157,18 @@ main {
     z-index: 998;
 
     @include sm {
-      top: 38.6vh;
+      max-width: 220px;
+      top: 33vh;
       left: 15vw;
     }
 
     @include md {
-      top: 31.7vh;
+      max-width: 300px;
+      top: 34vh;
     }
 
     @include xl {
-      max-width: 350px;
+      max-width: 400px;
       top: 29.1vh;
     }
 
