@@ -18,18 +18,16 @@
   grid-column: 1/3;
   width: 100%;
   height: 6vh;
-  font-size: 0.8rem;
   color: black;
   font-weight: bold;
   text-decoration: none;
-
 
   @include md {
     grid-column: 10/13;
     font-size: 0.7rem;
   }
 
-  @include lg{
+  @include lg {
     font-size: 0.9rem;
   }
 }
