@@ -144,15 +144,20 @@ main {
     font-size: 1rem;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    margin-top: 2vh;
+    margin-top: 7vh;
     margin-right: 1vw;
     @media screen and (max-width: 767px) {
       display: none;
     }
 
     @include rwd(1400) {
-      top: 45vh;
-      font-size: 2rem;
+      top: 32vh;
+      font-size: 1.6rem;
+    }
+
+    @include rwd(1920) {
+      top: 40vh;
+      font-size: 1.6rem;
     }
   }
 
