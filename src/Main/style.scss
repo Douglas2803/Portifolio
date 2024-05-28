@@ -59,6 +59,7 @@ main {
     left: 10vw;
     width: 60vw;
     z-index: -1;
+    opacity: 0.5;
 
     @include sm {
       top: 37vh;
@@ -82,6 +83,12 @@ main {
       max-width: 400px;
     }
 
+    @include rwd(1400) {
+      top: 40vh;
+      left: 11%;
+      max-width: 340px;
+    }
+
     @include rwd(1800) {
       top: 40vh;
       left: 18%;
@@ -94,6 +101,7 @@ main {
     left: 50vw;
     width: 24vw;
     z-index: -2;
+    opacity: 0.5;
 
     @include md {
       top: 30vh;
@@ -112,15 +120,15 @@ main {
     }
 
     @include rwd(1400) {
-     max-width: 350px;
-     top: 31.1vh;
-   }
+      max-width: 300px;
+      top: 28vh;
+      left: 8vw;
+    }
 
     @include rwd(1800) {
       top: 28vh;
       left: 10vw;
     }
-
 
     @include rwd(2500) {
       max-width: 350px;
@@ -172,14 +180,20 @@ main {
       top: 29.1vh;
     }
 
+    @include rwd(1024) {
+      display: none;
+    }
+
     @include rwd(1400) {
-      max-width: 350px;
+      display: block;
+      max-width: 300px;
       top: 31.1vh;
+      left: 10vw;
     }
 
     @include rwd(2500) {
-      max-width: 450px;
-      top: 22.7vh;
+      max-width: 500px;
+      top: 27vh;
       left: 10vw;
     }
   }
