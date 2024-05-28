@@ -191,9 +191,17 @@ main {
 
     @include rwd(1400) {
       display: block;
-      max-width: 300px;
-      top: 31.1vh;
-      left: 10vw;
+      max-width: 320px;
+      top: 30vh;
+      left: 6vw;
+    }
+
+    @include rwd(1530) {
+      max-width: 500px;
+    }
+
+    @include rwd(1580) {
+      max-width: 320px;
     }
 
     @include rwd(2500) {
