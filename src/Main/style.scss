@@ -164,8 +164,8 @@ main {
   .douglas-photo {
     position: absolute;
     height: auto;
-    max-width: 220px;
-    top: 35vh;
+    max-width: 200px;
+    top: 38vh;
     left: 15vw;
     z-index: 998;
 
@@ -177,7 +177,7 @@ main {
 
     @include md {
       max-width: 300px;
-      top: 34vh;
+      top: 30vh;
     }
 
     @include xl {
@@ -186,13 +186,14 @@ main {
     }
 
     @include rwd(1024) {
-      display: none;
+      max-width: 200px;
+      top: 40vh;
     }
 
     @include rwd(1400) {
       display: block;
       max-width: 320px;
-      top: 30vh;
+      top: 25vh;
       left: 6vw;
     }
 
