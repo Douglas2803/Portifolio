@@ -29,11 +29,6 @@
       padding: 3vw;
     }
 
-    textarea::placeholder {
-      text-align: center;
-      padding: 20% 0;
-    }
-
     .form-items {
       color: variables.$secondary-color;
       background-color: transparent;
@@ -48,18 +43,15 @@
         color: variables.$secondary-color;
       }
 
-      // &:nth-child(3) {
-      //   height: 25vh;
-      // }
+      &:nth-child(3) {
+        height: 20vh;
+      }
 
-      // @include sm {
-      //   &:nth-child(3) {
-      //     height: 30vh;
-      //     display: flex;
-      //     align-items: center;
-      //     justify-content: center;
-      //   }
-      // }
+      @include sm {
+        &:nth-child(3) {
+          height: 20vh;
+        }
+      }
     }
 
     @include sm {
