@@ -42,23 +42,24 @@
       border-radius: 3vw;
       height: 8vh;
       width: 90%;
+      
 
       &::placeholder {
         color: variables.$secondary-color;
       }
 
-      &:nth-child(3) {
-        height: 25vh;
-      }
+      // &:nth-child(3) {
+      //   height: 25vh;
+      // }
 
-      @include sm {
-        &:nth-child(3) {
-          height: 30vh;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-      }
+      // @include sm {
+      //   &:nth-child(3) {
+      //     height: 30vh;
+      //     display: flex;
+      //     align-items: center;
+      //     justify-content: center;
+      //   }
+      // }
     }
 
     @include sm {

@@ -1,13 +1,16 @@
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
+import { ToastContainer,toast } from "react-toastify";
+
+import 'react-toastify/dist/ReactToastify.css';
+
 import "./style.scss";
 
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [showModal, setShowModal] = useState(true);
 
   const regexname = /^[A-Za-z\s]+$/;
   const regexemail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -16,10 +19,12 @@ const Form = () => {
     return regexname.test(name) && regexemail.test(email) && message !== "";
   }
 
+  const notify = (message: string, type: "success" | "error") => toast(message,{type});
+
   function sendEmail(e: any) {
     e.preventDefault();
 
-    if(!validateFields()) return;
+    if (!validateFields()) return;
 
     const templateParams = {
       from_name: name,
@@ -39,22 +44,13 @@ const Form = () => {
         setEmail("");
         setName("");
         setMessage("");
-        setShowModal(true);
+        notify("Enviado com sucesso","success");
       })
       .catch((err) => {
         console.log("ERRO: ", err);
+        notify("Enviado com sucesso","error");
       });
   }
-
-  useEffect(() => {
-    if (showModal) {
-      const timer = setTimeout(() => {
-        setShowModal(false);
-      }, 2000);
-
-      return () => clearTimeout(timer);
-    }
-  }, [showModal]);
 
   return (
     <div className="form-group">
@@ -86,16 +82,10 @@ const Form = () => {
           className="form-items"
           value={message}
           onChange={(event) => setMessage(event.target.value)}
-        ></textarea>
+        />
         <input type="submit" className="form-items" />
       </form>
-      {showModal && (
-        <div className="modal">
-          <div className="modal-content">
-            <p>O e-mail foi enviado com sucesso!</p>
-          </div>
-        </div>
-      )}
+      <ToastContainer />
     </div>
   );
 };
