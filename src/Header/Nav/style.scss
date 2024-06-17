@@ -40,12 +40,27 @@
       li {
         a {
           font-size: 1.3rem;
-          @include lg{
+
+          @include lg {
             font-size: 1.5rem;
           }
-          @include xl{
+          @include xl {
             font-size: 2rem;
           }
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          background-color: variables.$secondary-color;
+          height: 3px;
+          width: 25px;
+          left: 100px;
+          transform-origin: left;
+          transition: width 0.3s ease ;
+        }
+        &:hover::after{
+          width: 100%;
         }
       }
     }
